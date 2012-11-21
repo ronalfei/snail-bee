@@ -1,0 +1,8 @@
+2012-11-21 19:00:28.558 [error] <0.19475.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarith} 
+2012-11-21 19:00:59.359 [error] <0.19495.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarith} 
+2012-11-21 19:03:18.637 [error] <0.19568.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarith} 
+2012-11-21 19:04:08.172 [error] <0.19595.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarith} 
+2012-11-21 19:04:40.429 [error] <0.19615.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarith} 
+2012-11-21 19:05:10.621 [error] <0.19633.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarith} 
+2012-11-21 19:10:19.544 [error] <0.19790.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,{badarity,{#Fun<util.2.94554104>,[1,<<>>]}}} 
+2012-11-21 19:10:57.106 [error] <0.19812.1>@snail_action:server_error:45 Server error in module: resource, Reason: {error,badarg} 

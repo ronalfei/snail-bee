@@ -1,0 +1,17 @@
+
+{application, snail, [
+	{description, "snail for bee."},
+	{vsn, "0.1.0"},
+	{modules, []},
+	{registered, [snail_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+		crypto,
+%		public_key,
+%		ssl,
+		cowboy
+	]},
+	{mod, {snail, []}},
+	{env, []}
+]}.

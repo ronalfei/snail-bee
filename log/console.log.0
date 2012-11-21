@@ -1,0 +1,596 @@
+2012-11-20 09:43:14.066 [info] <0.14145.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:14.930 [info] <0.14147.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/323/748/1353375792323748101" 
+............................................................TmpPath  "/opt/data/tmp/nginx/9/0062730879" 
+2012-11-20 09:43:14.931 [info] <0.14147.82>@resource:upload:48 upload Response: {"data":{"md5":"08111d94199fc4a5c5d8d1d13b511e4e"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:14.986 [info] <0.14149.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:15.875 [info] <0.14152.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/376/752/1353375792376752111" 
+............................................................TmpPath  "/opt/data/tmp/nginx/0/0062730880" 
+2012-11-20 09:43:15.876 [info] <0.14152.82>@resource:upload:48 upload Response: {"data":{"md5":"aaa0c51ffca55e570c7f13ab47bb6035"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:15.908 [info] <0.14154.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:16.334 [info] <0.14156.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/428/352/1353375792428352121" 
+............................................................TmpPath  "/opt/data/tmp/nginx/1/0062730881" 
+2012-11-20 09:43:16.334 [info] <0.14156.82>@resource:upload:48 upload Response: {"data":{"md5":"87c46818c33c51a9ca61596f61ffbe7f"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:16.372 [info] <0.14158.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:17.381 [info] <0.14161.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/474/974/1353375792474974131" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0062730882" 
+2012-11-20 09:43:17.381 [info] <0.14161.82>@resource:upload:48 upload Response: {"data":{"md5":"a461c13f75a5336f4e6c2b044538f0e6"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:17.408 [info] <0.14163.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:17.473 [info] <0.14165.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/519/149/1353375792519149141" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0062730883" 
+2012-11-20 09:43:17.473 [info] <0.14165.82>@resource:upload:48 upload Response: {"data":{"md5":"d97ad72ca229fc74469466a51bcafef9"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:17.506 [info] <0.14167.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:18.221 [info] <0.14173.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/566/099/1353375792566099151" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0062730884" 
+2012-11-20 09:43:18.221 [info] <0.14173.82>@resource:upload:48 upload Response: {"data":{"md5":"a325a636c9dc39689e5fd0a71c29679d"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:18.241 [info] <0.14175.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:18.484 [info] <0.14177.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/610/984/1353375792610984161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0062730885" 
+2012-11-20 09:43:18.485 [info] <0.14177.82>@resource:upload:48 upload Response: {"data":{"md5":"2d0de9c7c6132d5fc54e244cbab9f8f7"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:18.507 [info] <0.14179.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:19.573 [info] <0.14182.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/657/676/1353375792657676171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0062730886" 
+2012-11-20 09:43:19.573 [info] <0.14182.82>@resource:upload:48 upload Response: {"data":{"md5":"43326aa096790831155ad50a14ea56ff"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:19.608 [info] <0.14184.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:19.951 [info] <0.14186.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/705/684/1353375792705684181" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0062730887" 
+2012-11-20 09:43:19.951 [info] <0.14186.82>@resource:upload:48 upload Response: {"data":{"md5":"de577dacfa2023a98155931623ef5ebc"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:19.973 [info] <0.14188.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:20.410 [info] <0.14190.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/753/863/1353375792753863191" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0062730888" 
+2012-11-20 09:43:20.410 [info] <0.14190.82>@resource:upload:48 upload Response: {"data":{"md5":"db58ed9976c6a801c6bbe7c78ee37321"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:43:20.441 [info] <0.14192.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:43:21.201 [info] <0.14195.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/798/614/1353375792798614201" 
+............................................................TmpPath  "/opt/data/tmp/nginx/9/0062730889" 
+2012-11-20 09:43:21.201 [info] <0.14195.82>@resource:upload:48 upload Response: {"data":{"md5":"ce3babee4ccd5e893916d3e78929d79e"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:27.939 [info] <0.14268.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:28.316 [info] <0.14270.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/867/523/1353375864867523371" 
+............................................................TmpPath  "/opt/data/tmp/nginx/0/0062730890" 
+2012-11-20 09:44:28.316 [info] <0.14270.82>@resource:upload:48 upload Response: {"data":{"md5":"f476f220ea05c9f8d426a1bbf3dc9bdb"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:28.359 [info] <0.14272.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:29.154 [info] <0.14274.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/915/426/1353375864915426381" 
+............................................................TmpPath  "/opt/data/tmp/nginx/1/0062730891" 
+2012-11-20 09:44:29.154 [info] <0.14274.82>@resource:upload:48 upload Response: {"data":{"md5":"eff5c522e03a2e88a914d7ee793a6cbc"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:29.185 [info] <0.14276.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:29.539 [info] <0.14279.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/957/495/1353375864957495391" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0062730892" 
+2012-11-20 09:44:29.540 [info] <0.14279.82>@resource:upload:48 upload Response: {"data":{"md5":"546e6e4728abc92b86ea5c956799badf"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:29.582 [info] <0.14281.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:30.325 [info] <0.14285.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/004/870/1353375865004870401" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0062730893" 
+2012-11-20 09:44:30.325 [info] <0.14285.82>@resource:upload:48 upload Response: {"data":{"md5":"49cc4aecc14fe3df9d956e71979675f5"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:30.351 [info] <0.14287.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:31.310 [info] <0.14290.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/049/259/1353375865049259411" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0062730894" 
+2012-11-20 09:44:31.310 [info] <0.14290.82>@resource:upload:48 upload Response: {"data":{"md5":"c4579de24744e083f9f1239c5f38ea85"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:31.350 [info] <0.14292.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:32.207 [info] <0.14294.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/091/583/1353375865091583421" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0062730895" 
+2012-11-20 09:44:32.207 [info] <0.14294.82>@resource:upload:48 upload Response: {"data":{"md5":"ce8836a4c1046922d6bcc9f7a3997f76"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:32.250 [info] <0.14296.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:32.924 [info] <0.14300.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/137/534/1353375865137534431" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0062730896" 
+2012-11-20 09:44:32.925 [info] <0.14300.82>@resource:upload:48 upload Response: {"data":{"md5":"5e012a94ba836fbca09c79ca71042200"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:32.951 [info] <0.14302.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:33.970 [info] <0.14305.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/188/136/1353375865188136441" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0062730897" 
+2012-11-20 09:44:33.970 [info] <0.14305.82>@resource:upload:48 upload Response: {"data":{"md5":"6f9a310fddbfdc04cc5cff31731b5be1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:34.019 [info] <0.14307.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:34.502 [info] <0.14309.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/234/721/1353375865234721451" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0062730898" 
+2012-11-20 09:44:34.502 [info] <0.14309.82>@resource:upload:48 upload Response: {"data":{"md5":"687ecfedfe7daa4f5e5bbbf4dbbcdaf8"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:34.517 [info] <0.14311.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:35.474 [info] <0.14314.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/280/308/1353375865280308461" 
+............................................................TmpPath  "/opt/data/tmp/nginx/9/0062730899" 
+2012-11-20 09:44:35.474 [info] <0.14314.82>@resource:upload:48 upload Response: {"data":{"md5":"adaa07184e156162e217b0b43d7432b0"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:35.516 [info] <0.14316.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:36.327 [info] <0.14318.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/329/155/1353375865329155471" 
+............................................................TmpPath  "/opt/data/tmp/nginx/0/0062730900" 
+2012-11-20 09:44:36.327 [info] <0.14318.82>@resource:upload:48 upload Response: {"data":{"md5":"40b7939039fa5f5cd8779c4819834748"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:36.351 [info] <0.14320.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:37.161 [info] <0.14322.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/376/641/1353375865376641481" 
+............................................................TmpPath  "/opt/data/tmp/nginx/1/0062730901" 
+2012-11-20 09:44:37.162 [info] <0.14322.82>@resource:upload:48 upload Response: {"data":{"md5":"1b7ceb9aee2351406ec1f929f466dd8d"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:37.184 [info] <0.14324.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:38.491 [info] <0.14329.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/426/370/1353375865426370491" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0062730902" 
+2012-11-20 09:44:38.491 [info] <0.14329.82>@resource:upload:48 upload Response: {"data":{"md5":"98c3d6068490146724b6a7aac2040be0"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:38.517 [info] <0.14331.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:39.465 [info] <0.14334.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/475/336/1353375865475336501" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0062730903" 
+2012-11-20 09:44:39.466 [info] <0.14334.82>@resource:upload:48 upload Response: {"data":{"md5":"5c6c8041ca7ea4684fba2b056cfae2ff"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:44:39.484 [info] <0.14336.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:44:40.017 [info] <0.14338.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/524/084/1353375865524084511" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0062730904" 
+2012-11-20 09:44:40.017 [info] <0.14338.82>@resource:upload:48 upload Response: {"data":{"md5":"692c9911c5e4d9d97175db0da1de1344"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 09:49:49.715 [info] <0.14671.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:49:49.716 [info] <0.14671.82>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/629/025/1353033256629025141" 
+2012-11-20 09:50:42.932 [info] <0.14729.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 09:50:42.933 [info] <0.14729.82>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/629/025/1353033256629025141" 
+2012-11-20 10:10:54.670 [info] <0.16021.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 10:10:55.473 [info] <0.16026.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/741/719/1353377452741719771" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0062730905" 
+2012-11-20 10:10:55.473 [info] <0.16026.82>@resource:upload:48 upload Response: {"data":{"md5":"43326aa096790831155ad50a14ea56ff"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 10:11:35.618 [info] <0.16070.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 10:11:36.020 [info] <0.16072.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/839/034/1353377493839034781" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0062730906" 
+2012-11-20 10:11:36.020 [info] <0.16072.82>@resource:upload:48 upload Response: {"data":{"md5":"d0205b553dff0619e425181357a4a035"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 10:25:16.440 [info] <0.16948.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 10:25:17.539 [info] <0.16951.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/736/661/1353378314736661811" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0062730907" 
+2012-11-20 10:25:17.540 [info] <0.16951.82>@resource:upload:48 upload Response: {"data":{"md5":"aaa0c51ffca55e570c7f13ab47bb6035"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 12:11:12.179 [info] <0.23727.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 12:11:12.181 [info] <0.23727.82>@resource:uploadblock:120 -------upload key  expire::::1353385272
+2012-11-20 12:11:12.181 [info] <0.23727.82>@resource:uploadblock:122 -------upload key  data ::::"1353384672010332101|1353385272"
+2012-11-20 12:11:12.181 [info] <0.23727.82>@resource:uploadblock:124 -------upload block key ::::<<136,174,206,3,134,156,65,238,59,208,84,243,207,189,153,58,121,156,26,40,25,162,38,191,97,24,82,65,173,17,240,99>>
+2012-11-20 13:46:39.578 [info] <0.29834.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 13:46:39.652 [info] <0.29836.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/076/062/1353389807076062141" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0062730912" 
+2012-11-20 13:46:39.652 [info] <0.29836.82>@resource:upload:48 upload Response: {"data":{"md5":"2b04df3ecc1d94afddff082d139c6f15"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 13:46:57.069 [info] <0.29856.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 13:46:57.070 [info] <0.29856.82>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/434/599/1353033256434599101" 
+2012-11-20 13:52:51.060 [info] <0.30235.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 13:52:51.137 [info] <0.30237.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0062730913" 
+2012-11-20 13:52:51.137 [info] <0.30237.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 13:52:51.166 [info] <0.30239.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 13:52:51.235 [info] <0.30242.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0062730914" 
+2012-11-20 13:52:51.235 [info] <0.30242.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:01:05.974 [info] <0.30769.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:01:06.051 [info] <0.30771.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0062730915" 
+2012-11-20 14:01:06.052 [info] <0.30771.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:01:06.086 [info] <0.30773.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:01:06.147 [info] <0.30775.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0062730916" 
+2012-11-20 14:01:06.148 [info] <0.30775.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:01:13.740 [info] <0.30787.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:01:13.811 [info] <0.30789.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/123/936/1353389807123936151" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0062730917" 
+2012-11-20 14:01:13.812 [info] <0.30789.82>@resource:upload:48 upload Response: {"data":{"md5":"8969288f4245120e7c3870287cce0ff3"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:01:13.846 [info] <0.30791.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:01:13.915 [info] <0.30793.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0062730918" 
+2012-11-20 14:01:13.917 [info] <0.30793.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:01:13.942 [info] <0.30795.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:01:13.999 [info] <0.30797.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/9/0062730919" 
+2012-11-20 14:01:13.999 [info] <0.30797.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:01:41.050 [info] <0.30826.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:01:41.051 [info] <0.30826.82>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 14:02:14.376 [info] <0.30865.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:02:14.445 [info] <0.30867.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/0/0062730920" 
+2012-11-20 14:02:14.446 [info] <0.30867.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:02:14.479 [info] <0.30869.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:02:14.535 [info] <0.30871.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/1/0062730921" 
+2012-11-20 14:02:14.536 [info] <0.30871.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:02:41.155 [info] <0.30900.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:02:41.156 [info] <0.30900.82>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 14:03:29.526 [info] <0.30955.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:03:29.594 [info] <0.30957.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0062730922" 
+2012-11-20 14:03:29.594 [info] <0.30957.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:03:29.637 [info] <0.30959.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:03:29.692 [info] <0.30961.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0062730923" 
+2012-11-20 14:03:29.692 [info] <0.30961.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:03:37.104 [info] <0.30970.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:03:37.172 [info] <0.30972.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0062730924" 
+2012-11-20 14:03:37.173 [info] <0.30972.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:03:37.203 [info] <0.30975.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:03:37.260 [info] <0.30979.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0062730925" 
+2012-11-20 14:03:37.261 [info] <0.30979.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:04:54.233 [info] <0.31061.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:04:54.234 [info] <0.31061.82>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 14:07:40.689 [info] <0.31240.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:07:40.761 [info] <0.31242.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0062730926" 
+2012-11-20 14:07:40.762 [info] <0.31242.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:07:40.799 [info] <0.31244.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:07:40.858 [info] <0.31246.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0062730927" 
+2012-11-20 14:07:40.859 [info] <0.31246.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:07:51.873 [info] <0.31260.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:07:51.942 [info] <0.31262.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0062730928" 
+2012-11-20 14:07:51.942 [info] <0.31262.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:07:51.981 [info] <0.31264.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:07:52.038 [info] <0.31266.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/9/0062730929" 
+2012-11-20 14:07:52.039 [info] <0.31266.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:08:03.824 [info] <0.31282.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:08:03.873 [info] <0.31284.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/123/936/1353389807123936151" 
+............................................................TmpPath  "/opt/data/tmp/nginx/0/0062730930" 
+2012-11-20 14:08:03.873 [info] <0.31284.82>@resource:upload:48 upload Response: {"data":{"md5":"8969288f4245120e7c3870287cce0ff3"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:08:03.931 [info] <0.31286.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:08:04.001 [info] <0.31288.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/1/0062730931" 
+2012-11-20 14:08:04.001 [info] <0.31288.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:08:04.025 [info] <0.31290.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:08:04.081 [info] <0.31292.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0062730932" 
+2012-11-20 14:08:04.082 [info] <0.31292.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:08:12.645 [info] <0.31302.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:08:12.701 [info] <0.31304.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0062730933" 
+2012-11-20 14:08:12.702 [info] <0.31304.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:13:08.301 [info] <0.31620.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:13:08.372 [info] <0.31622.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0062730934" 
+2012-11-20 14:13:08.373 [info] <0.31622.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:13:08.403 [info] <0.31624.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:13:08.461 [info] <0.31628.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0062730935" 
+2012-11-20 14:13:08.461 [info] <0.31628.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:13:23.115 [info] <0.31645.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:13:23.184 [info] <0.31647.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0062730936" 
+2012-11-20 14:13:23.185 [info] <0.31647.82>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:13:23.238 [info] <0.31650.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:13:23.294 [info] <0.31652.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0062730937" 
+2012-11-20 14:13:23.295 [info] <0.31652.82>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:15:01.353 [info] <0.31759.82>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:15:01.419 [info] <0.31761.82>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/988/253/1353389806988253121" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0062730938" 
+2012-11-20 14:15:01.419 [info] <0.31761.82>@resource:upload:48 upload Response: {"data":{"md5":"bdf3bf1da3405725be763540d6601144"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 14:39:56.314 [info] <0.6.0> Application lager started on node 'snail-bee@localhost'
+2012-11-20 14:39:56.401 [info] <0.6.0> Application snail started on node 'snail-bee@localhost'
+2012-11-20 14:53:45.649 [info] <0.540.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 14:53:45.736 [info] <0.542.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/900/116/1353394421900116211" 
+............................................................TmpPath  "/opt/data/tmp/nginx/7/0061344087" 
+2012-11-20 14:53:45.778 [info] <0.542.0>@resource:upload:48 upload Response: {"data":{"md5":"8ea99f342a9c8d79d080a2b9001f13a3"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 15:06:03.793 [info] <0.913.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:06:03.893 [info] <0.915.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/894/923/1353389806894923101" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0061344088" 
+2012-11-20 15:06:03.922 [info] <0.915.0>@resource:upload:48 upload Response: {"data":{"md5":"076e3caed758a1c18c91a0e9cae3368f"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 15:06:20.575 [info] <0.926.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:06:20.647 [info] <0.928.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/030/367/1353389807030367131" 
+............................................................TmpPath  "/opt/data/tmp/nginx/9/0061344089" 
+2012-11-20 15:06:20.688 [info] <0.928.0>@resource:upload:48 upload Response: {"data":{"md5":"5a44c7ba5bbe4ec867233d67e4806848"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 15:06:32.724 [info] <0.936.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:06:32.781 [info] <0.938.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/873/616/1353395191873616251" 
+............................................................TmpPath  "/opt/data/tmp/nginx/0/0061344090" 
+2012-11-20 15:06:32.818 [info] <0.938.0>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 15:06:49.574 [info] <0.948.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:06:49.644 [info] <0.950.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/173/989/1353389807173989161" 
+............................................................TmpPath  "/opt/data/tmp/nginx/1/0061344091" 
+2012-11-20 15:06:49.675 [info] <0.950.0>@resource:upload:48 upload Response: {"data":{"md5":"9d377b10ce778c4938b3c7e2c63a229a"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 15:09:51.794 [info] <0.1043.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:09:51.861 [info] <0.1045.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/222/640/1353389807222640171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/2/0061344092" 
+2012-11-20 15:09:51.896 [info] <0.1045.0>@resource:upload:48 upload Response: {"data":{"md5":"fafa5efeaf3cbe3b23b2748d13e629a1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 15:52:05.390 [info] <0.2314.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:52:05.430 [info] <0.2314.0>@resource:uploadblock:119 -------upload key  expire::::1353398525
+2012-11-20 15:52:05.430 [info] <0.2314.0>@resource:uploadblock:121 -------upload key  data ::::"1353384672010332101|1353398525"
+2012-11-20 15:52:05.430 [info] <0.2314.0>@resource:uploadblock:123 -------upload block key ::::<<145,44,213,173,147,6,5,77,248,226,37,181,92,180,36,187,229,192,91,194,196,62,245,202,179,246,36,139,105,253,220,13>>
+2012-11-20 15:53:13.085 [error] <0.2351.0> ** Handler resource terminating in handle/2
+   for the reason error:{badmatch,{[<<"uploadblock">>],{http_req,#Port<0.3826>,ranch_tcp,close,<0.2351.0>,'POST',{1,1},undefined,<<"tp.lenovobee.com">>,undefined,80,<<"/resource/uploadblock/">>,[<<"uploadblock">>],<<"t=df0b5046fb66e5bcf6312ff7ab2da59a9730f40d2a477512bdc58e9cdff910ec2b21a589389ad5c60b42535058dd4bf26644b6f1cbc84434f5297ab320217c1e8b730c50fdec870f476dae223e853a66bf7c8f2ab3b08cea7131f28a05ee89ab7013eeae5558ff7c5f947493350f2fe9caf451f40b9b0398796ed869&cid=41">>,undefined,[],[{'Content-Length',<<"629">>},{<<"X-Lenovo-Range">>,<<"bytes=0-628">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-628">>},{'Cookie',<<"PHPSESSID=45c768ch4qhgnkkb4sn41jbvr3">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10...">>},...],...}}}
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3826>},{transport,ranch_tcp},{connection,close},{pid,<0.2351.0>},{method,'POST'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadblock/">>},{path_info,[<<"uploadblock">>]},{qs,<<"t=df0b5046fb66e5bcf6312ff7ab2da59a9730f40d2a477512bdc58e9cdff910ec2b21a589389ad5c60b42535058dd4bf26644b6f1cbc84434f5297ab320217c1e8b730c50fdec870f476dae223e853a66bf7c8f2ab3b08cea7131f28a05ee89ab7013eeae5558ff7c5f947493350f2fe9caf451f40b9b0398796ed869&cid=41">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Content-Length',<<"629">>},{<<"X-Lenovo-Range">>,<<"bytes=0-628">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-628">>},{'Cookie',<<"PHPSESSID=45c768ch4qhgnkkb4sn41jbvr3">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<239,187,191,60,63,120,109,108,32,118,101,114,115,105,111,110,61,34,49,46,48,34,32,101,110,99,111,100,105,110,103,61,34,117,116,102,45,56,34,63,62,13,10,60,99,108,105,101,110,116,95,99,111,110,102,105,103,62,13,10,13,10,9,60,33,45,45,230,152,175,229,144,166,230,152,190,231,164,186,232,135,170,229,138,168,231,153,187,229,189,149,45,45,62,13,10,9,60,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,49,60,47,115,104,111,119,95,97,117,116,111,95,108,111,103,105,...>>},...]
+** Stacktrace: [{resource,uploadblock,3,[{file,"src/handler/resource.erl"},{line,79}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 15:53:32.802 [info] <0.2363.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:53:32.804 [info] <0.2363.0>@resource:uploadblock:119 -------upload key  expire::::1353398612
+2012-11-20 15:53:32.805 [info] <0.2363.0>@resource:uploadblock:121 -------upload key  data ::::"1353384672010332101|1353398612"
+2012-11-20 15:53:32.805 [info] <0.2363.0>@resource:uploadblock:123 -------upload block key ::::<<92,16,152,72,40,216,70,217,174,204,255,160,16,105,89,173,133,223,116,160,221,187,42,232,209,100,250,27,168,205,229,3>>
+2012-11-20 15:57:49.295 [info] <0.2494.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:57:49.301 [info] <0.2494.0>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 15:58:06.916 [info] <0.2505.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:58:06.917 [info] <0.2505.0>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 15:58:16.327 [info] <0.2511.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:58:16.328 [info] <0.2511.0>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 15:58:20.946 [info] <0.2516.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 15:58:20.947 [info] <0.2516.0>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 16:10:09.816 [info] <0.2872.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:10:09.818 [info] <0.2872.0>@resource:uploadblock:119 -------upload key  expire::::1353399609
+2012-11-20 16:10:09.818 [info] <0.2872.0>@resource:uploadblock:121 -------upload key  data ::::"1353384672010332101|1353399609"
+2012-11-20 16:10:09.819 [info] <0.2872.0>@resource:uploadblock:123 -------upload block key ::::<<161,157,249,132,59,202,195,5,205,78,72,68,131,61,221,6,118,72,30,98,222,134,10,8,101,154,69,36,213,167,227,171>>
+2012-11-20 16:16:47.398 [info] <0.3074.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:16:47.401 [info] <0.3074.0>@resource:uploadblock:119 -------upload key  expire::::1353400007
+2012-11-20 16:16:47.401 [info] <0.3074.0>@resource:uploadblock:121 -------upload key  data ::::"1353384672010332101|1353400007"
+2012-11-20 16:16:47.401 [info] <0.3074.0>@resource:uploadblock:123 -------upload block key ::::<<213,26,226,124,128,143,185,109,142,47,30,182,111,70,20,80,122,194,94,211,87,106,8,130,53,90,215,141,48,89,120,205>>
+2012-11-20 16:16:47.616 [info] <0.3077.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:16:47.617 [error] emulator Error in process <0.3077.0> on node 'snail-bee@localhost' with exit value: {{try_clause,ok},[{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]}
+
+
+2012-11-20 16:16:47.651 [error] <0.76.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.3077.0> exit with reason no try clause matching ok in cowboy_protocol:handler_handle/3 line 313 in context child_terminated
+2012-11-20 16:16:47.996 [error] <0.3079.0> ** Handler resource terminating in handle/2
+   for the reason error:{badmatch,{[<<"uploadblock">>],{http_req,#Port<0.3887>,ranch_tcp,close,<0.3079.0>,'POST',{1,1},undefined,<<"tp.lenovobee.com">>,undefined,80,<<"/resource/uploadblock/">>,[<<"uploadblock">>],<<"t=a56b535f131ba5ccb87bf47e014e7aaa15813ece8a3c719ae25c4dddb604e86b39f5ee352aea32b40c3fcc97f4c55d13ed25817a6f439eda0bfefae12f872fd7e8a27f31424fa4bff2c82e335800cf288050ec8579609f971ca3a5b750f4c309c2b99ce0576c17fc78aad70eeac0fda11a299e570482171c620463b9&cid=41">>,undefined,[],[{'Content-Length',<<"629">>},{<<"X-Lenovo-Range">>,<<"bytes=0-628">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-628">>},{'Cookie',<<"PHPSESSID=tiis9a3r602gmirvipgguk3ik6">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10...">>},...],...}}}
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3887>},{transport,ranch_tcp},{connection,close},{pid,<0.3079.0>},{method,'POST'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadblock/">>},{path_info,[<<"uploadblock">>]},{qs,<<"t=a56b535f131ba5ccb87bf47e014e7aaa15813ece8a3c719ae25c4dddb604e86b39f5ee352aea32b40c3fcc97f4c55d13ed25817a6f439eda0bfefae12f872fd7e8a27f31424fa4bff2c82e335800cf288050ec8579609f971ca3a5b750f4c309c2b99ce0576c17fc78aad70eeac0fda11a299e570482171c620463b9&cid=41">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Content-Length',<<"629">>},{<<"X-Lenovo-Range">>,<<"bytes=0-628">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-628">>},{'Cookie',<<"PHPSESSID=tiis9a3r602gmirvipgguk3ik6">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<239,187,191,60,63,120,109,108,32,118,101,114,115,105,111,110,61,34,49,46,48,34,32,101,110,99,111,100,105,110,103,61,34,117,116,102,45,56,34,63,62,13,10,60,99,108,105,101,110,116,95,99,111,110,102,105,103,62,13,10,13,10,9,60,33,45,45,230,152,175,229,144,166,230,152,190,231,164,186,232,135,170,229,138,168,231,153,187,229,189,149,45,45,62,13,10,9,60,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,49,60,47,115,104,111,119,95,97,117,116,111,95,108,111,103,105,...>>},...]
+** Stacktrace: [{resource,uploadblock,3,[{file,"src/handler/resource.erl"},{line,79}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:16:48.165 [error] <0.3081.0> ** Handler resource terminating in handle/2
+   for the reason error:{badmatch,{[<<"uploadblock">>],{http_req,#Port<0.3888>,ranch_tcp,close,<0.3081.0>,'POST',{1,1},undefined,<<"tp.lenovobee.com">>,undefined,80,<<"/resource/uploadblock/">>,[<<"uploadblock">>],<<"t=50b12a6ab5a00bf3e8a188649cdfaf5482f445d9234eccfed1fe5ef8055d68bb6d807611fa0b9a111b24bde99d9a8dcdcf3d55a96309a3efe05111f4eaf3c9f622a9ef27ba72588e09989fb0616022415be1c271cbd5d1115b84f7cad7f03276740a97f36d471679a67f1bf4cc6e33ae5f6fd18795f9dce41f946e5e&cid=41">>,undefined,[],[{'Content-Length',<<"629">>},{<<"X-Lenovo-Range">>,<<"bytes=0-628">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-628">>},{'Cookie',<<"PHPSESSID=tiis9a3r602gmirvipgguk3ik6">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10...">>},...],...}}}
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3888>},{transport,ranch_tcp},{connection,close},{pid,<0.3081.0>},{method,'POST'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadblock/">>},{path_info,[<<"uploadblock">>]},{qs,<<"t=50b12a6ab5a00bf3e8a188649cdfaf5482f445d9234eccfed1fe5ef8055d68bb6d807611fa0b9a111b24bde99d9a8dcdcf3d55a96309a3efe05111f4eaf3c9f622a9ef27ba72588e09989fb0616022415be1c271cbd5d1115b84f7cad7f03276740a97f36d471679a67f1bf4cc6e33ae5f6fd18795f9dce41f946e5e&cid=41">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Content-Length',<<"629">>},{<<"X-Lenovo-Range">>,<<"bytes=0-628">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-628">>},{'Cookie',<<"PHPSESSID=tiis9a3r602gmirvipgguk3ik6">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<239,187,191,60,63,120,109,108,32,118,101,114,115,105,111,110,61,34,49,46,48,34,32,101,110,99,111,100,105,110,103,61,34,117,116,102,45,56,34,63,62,13,10,60,99,108,105,101,110,116,95,99,111,110,102,105,103,62,13,10,13,10,9,60,33,45,45,230,152,175,229,144,166,230,152,190,231,164,186,232,135,170,229,138,168,231,153,187,229,189,149,45,45,62,13,10,9,60,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,49,60,47,115,104,111,119,95,97,117,116,111,95,108,111,103,105,...>>},...]
+** Stacktrace: [{resource,uploadblock,3,[{file,"src/handler/resource.erl"},{line,79}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:17:00.784 [info] <0.3090.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:17:00.786 [info] <0.3090.0>@resource:uploadblock:119 -------upload key  expire::::1353400020
+2012-11-20 16:17:00.786 [info] <0.3090.0>@resource:uploadblock:121 -------upload key  data ::::"1353384672010332101|1353400020"
+2012-11-20 16:17:00.787 [info] <0.3090.0>@resource:uploadblock:123 -------upload block key ::::<<5,80,102,178,3,232,149,106,169,169,69,176,252,61,183,222,108,9,228,41,232,16,184,209,2,106,204,235,172,98,78,192>>
+2012-11-20 16:17:03.211 [info] <0.3094.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:17:03.212 [error] emulator Error in process <0.3094.0> on node 'snail-bee@localhost' with exit value: {{try_clause,ok},[{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]}
+
+
+2012-11-20 16:17:03.312 [error] <0.76.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.3094.0> exit with reason no try clause matching ok in cowboy_protocol:handler_handle/3 line 313 in context child_terminated
+2012-11-20 16:17:52.039 [info] <0.3120.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:17:52.041 [info] <0.3120.0>@resource:uploadblock:119 -------upload key  expire::::1353400072
+2012-11-20 16:17:52.042 [info] <0.3120.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353400072"
+2012-11-20 16:17:52.042 [info] <0.3120.0>@resource:uploadblock:123 -------upload block key ::::<<175,28,55,255,57,214,8,56,51,89,181,58,35,128,18,159,128,242,202,156,11,119,78,249,115,37,246,13,129,158,131,15>>
+2012-11-20 16:17:52.258 [info] <0.3123.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:17:52.258 [error] emulator Error in process <0.3123.0> on node 'snail-bee@localhost' with exit value: {{try_clause,ok},[{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]}
+
+
+2012-11-20 16:17:52.276 [error] <0.76.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.3123.0> exit with reason no try clause matching ok in cowboy_protocol:handler_handle/3 line 313 in context child_terminated
+2012-11-20 16:18:11.977 [info] <0.3135.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:18:11.980 [info] <0.3135.0>@resource:uploadblock:119 -------upload key  expire::::1353400091
+2012-11-20 16:18:11.980 [info] <0.3135.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353400091"
+2012-11-20 16:18:11.980 [info] <0.3135.0>@resource:uploadblock:123 -------upload block key ::::<<149,143,4,15,182,214,175,173,227,144,125,72,193,176,148,98,218,247,158,97,230,69,216,49,79,144,207,170,221,60,42,121>>
+2012-11-20 16:18:12.202 [info] <0.3138.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:18:12.204 [error] <0.3138.0> ** Handler resource terminating in handle/2
+   for the reason error:undef
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3897>},{transport,ranch_tcp},{connection,close},{pid,<0.3138.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=c293e3dd9b34a6d058227a247e9dba949d31b48ccc1d45eafae7ff193ba42be8492eae9a634e3d8cca8bc6edc4ebb43d9901f96f1528082316e12184fff4d1d34b7318b8a96e9f3431120e9bc91a1f0afdbbbec0cf526915d48ea44701149cf9c3a7b5a25f044749d4806b7e0a15944cfe81589a04253026&s=629">>},{qs_vals,undefined},{bindings,[]},{headers,[{'User-Agent',<<"WinHttpClient">>},{'Cookie',<<"PHPSESSID=tiis9a3r602gmirvipgguk3ik6">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{lager,error,[[116,114,117,110,99,97,116,101,32,102,105,108,101,32,"\"/opt/data/bee/upload/898/295/1352800837898295421\"",32,101,114,114,111,114,44,32,82,65,58,"error",44,32,82,66,58,[123,["badfun",44,10,[32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[123,["ok",44,10,[32,32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],"#Fun<fstream_pool.3.67853922>"],125]],125]]],[]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,57}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,239}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:25:57.646 [info] <0.3374.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:25:57.650 [info] <0.3374.0>@resource:uploadblock:119 -------upload key  expire::::1353400557
+2012-11-20 16:25:57.650 [info] <0.3374.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353400557"
+2012-11-20 16:25:57.651 [info] <0.3374.0>@resource:uploadblock:123 -------upload block key ::::<<187,182,197,212,78,33,14,1,109,192,113,107,48,190,127,129,250,168,81,198,137,202,133,199,63,82,255,146,89,177,230,154>>
+2012-11-20 16:25:57.873 [info] <0.3377.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:25:57.874 [error] <0.3377.0> ** Handler resource terminating in handle/2
+   for the reason error:undef
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3909>},{transport,ranch_tcp},{connection,close},{pid,<0.3377.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=30e032226f233866d27be9988487bb7f901acb362bf2a434d38ca42483f1a333f96b72682011ae27594c099192b94e88e0f4fea0f04ae32d5fe58fd023f532ccc069072bb4a8b6df21e292d1ef4ebc5d2e73851b347cfd1b1300b0cf9f6ba2d175183dbbb7c06ecc38444b706be836ca7c3027077fe9534d&s=655">>},{qs_vals,undefined},{bindings,[]},{headers,[{'User-Agent',<<"WinHttpClient">>},{'Cookie',<<"PHPSESSID=mjkdbh0gb94c47uababc8c7b63">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{lager,error,[[116,114,117,110,99,97,116,101,32,102,105,108,101,32,"\"/opt/data/bee/upload/898/295/1352800837898295421\"",32,101,114,114,111,114,44,32,82,65,58,"error",44,32,82,66,58,[123,["badfun",44,10,[32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[123,["ok",44,10,[32,32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],"#Fun<fstream_pool.0.49638735>"],125]],125]]],[]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,57}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,239}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:30:39.644 [info] <0.3520.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:30:39.647 [info] <0.3520.0>@resource:uploadblock:119 -------upload key  expire::::1353400839
+2012-11-20 16:30:39.647 [info] <0.3520.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353400839"
+2012-11-20 16:30:39.647 [info] <0.3520.0>@resource:uploadblock:123 -------upload block key ::::"1571D3EFAEC00D8FB54DCD6610173358646FB3939D3C8B25B9A10D5B2CC3C4E5"
+2012-11-20 16:30:39.863 [info] <0.3523.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:30:39.865 [error] <0.3523.0> ** Handler resource terminating in handle/2
+   for the reason error:undef
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3930>},{transport,ranch_tcp},{connection,close},{pid,<0.3523.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&s=655">>},{qs_vals,undefined},{bindings,[]},{headers,[{'User-Agent',<<"WinHttpClient">>},{'Cookie',<<"PHPSESSID=l7epcqarvcvjo7ekmgj4db4ot1">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{lager,error,["truncate file error :!!!!!!!!!!!!!!!!!!!!!!!!!!!!~s~n",[[116,114,117,110,99,97,116,101,32,102,105,108,101,32,"\"/opt/data/bee/upload/898/295/1352800837898295421\"",32,101,114,114,111,114,44,32,82,65,58,"error",44,32,82,66,58,[123,["badfun",44,10,[32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[123,["ok",44,10,[32,32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],"#Fun<fstream_pool.0.49638735>"],125]],125]]]],[]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,57}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,239}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:33:22.187 [info] <0.3608.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:33:22.210 [error] <0.3608.0> ** Handler resource terminating in handle/2
+   for the reason error:undef
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3941>},{transport,ranch_tcp},{connection,close},{pid,<0.3608.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&s=655">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Accept',<<"*/*">>},{'User-Agent',<<"curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"127.0.0.1">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{lager,error,["truncate file error :!!!!!!!!!!!!!!!!!!!!!!!!!!!!~s~n",[[116,114,117,110,99,97,116,101,32,102,105,108,101,32,"\"/opt/data/bee/upload/898/295/1352800837898295421\"",32,101,114,114,111,114,44,32,82,65,58,"error",44,32,82,66,58,[123,["badfun",44,10,[32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[123,["ok",44,10,[32,32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],"#Fun<fstream_pool.0.49638735>"],125]],125]]]],[]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,57}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,239}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:33:31.114 [info] <0.3616.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:33:31.115 [error] <0.76.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.3616.0> exit with reason no try clause matching ok in cowboy_protocol:handler_handle/3 line 313 in context child_terminated
+2012-11-20 16:33:31.139 [error] emulator Error in process <0.3616.0> on node 'snail-bee@localhost' with exit value: {{try_clause,ok},[{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]}
+
+
+2012-11-20 16:34:18.651 [info] <0.3642.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:34:18.651 [error] <0.76.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.3642.0> exit with reason no try clause matching ok in cowboy_protocol:handler_handle/3 line 313 in context child_terminated
+2012-11-20 16:34:18.671 [error] emulator Error in process <0.3642.0> on node 'snail-bee@localhost' with exit value: {{try_clause,ok},[{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]}
+
+
+2012-11-20 16:35:25.065 [info] <0.3677.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:36:08.542 [info] <0.3701.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:36:08.543 [info] <0.3701.0>@resource:uploadblock:119 -------upload key  expire::::1353401168
+2012-11-20 16:36:08.543 [info] <0.3701.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353401168"
+2012-11-20 16:36:08.543 [info] <0.3701.0>@resource:uploadblock:123 -------upload block key ::::"9FBB161EBD55E832591CDA6447C2253B45F84FB48603CC0FF2CE3890606A503C"
+2012-11-20 16:36:08.761 [info] <0.3704.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:36:09.685 [error] <0.3706.0> ** Handler resource terminating in handle/2
+   for the reason error:{badmatch,{[<<"uploadblock">>],{http_req,#Port<0.3958>,ranch_tcp,close,<0.3706.0>,'POST',{1,1},undefined,<<"tp.lenovobee.com">>,undefined,80,<<"/resource/uploadblock/">>,[<<"uploadblock">>],<<"t=30e032226f233866d27be9988487bb7f901acb362bf2a434d38ca42483f1a333f96b72682011ae27594c099192b94e88e0f4fea0f04ae32d5fe58fd023f532ccc069072bb4a8b6df21e292d1ef4ebc5d2e73851b347cfd1b1300b0cf9f6ba2d175183dbbb7c06ecc38444b706be836ca7c3027077fe9534d&cid=41">>,undefined,[],[{'Content-Length',<<"655">>},{<<"X-Lenovo-Range">>,<<"bytes=0-654">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-654">>},{'Cookie',<<"PHPSESSID=q0bo258d0bosl06sqae9kinb16">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.1...">>},...],...}}}
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3958>},{transport,ranch_tcp},{connection,close},{pid,<0.3706.0>},{method,'POST'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadblock/">>},{path_info,[<<"uploadblock">>]},{qs,<<"t=30e032226f233866d27be9988487bb7f901acb362bf2a434d38ca42483f1a333f96b72682011ae27594c099192b94e88e0f4fea0f04ae32d5fe58fd023f532ccc069072bb4a8b6df21e292d1ef4ebc5d2e73851b347cfd1b1300b0cf9f6ba2d175183dbbb7c06ecc38444b706be836ca7c3027077fe9534d&cid=41">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Content-Length',<<"655">>},{<<"X-Lenovo-Range">>,<<"bytes=0-654">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-654">>},{'Cookie',<<"PHPSESSID=q0bo258d0bosl06sqae9kinb16">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<239,187,191,60,63,120,109,108,32,118,101,114,115,105,111,110,61,34,49,46,48,34,32,101,110,99,111,100,105,110,103,61,34,117,116,102,45,56,34,63,62,13,10,60,99,108,105,101,110,116,95,99,111,110,102,105,103,62,13,10,13,10,9,60,33,45,45,230,152,175,229,144,166,230,152,190,231,164,186,232,135,170,229,138,168,231,153,187,229,189,149,45,45,62,13,10,9,60,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,49,60,47,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,...>>},...]
+** Stacktrace: [{resource,uploadblock,3,[{file,"src/handler/resource.erl"},{line,79}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:36:09.850 [error] <0.3708.0> ** Handler resource terminating in handle/2
+   for the reason error:{badmatch,{[<<"uploadblock">>],{http_req,#Port<0.3959>,ranch_tcp,close,<0.3708.0>,'POST',{1,1},undefined,<<"tp.lenovobee.com">>,undefined,80,<<"/resource/uploadblock/">>,[<<"uploadblock">>],<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&cid=41">>,undefined,[],[{'Content-Length',<<"655">>},{<<"X-Lenovo-Range">>,<<"bytes=0-654">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-654">>},{'Cookie',<<"PHPSESSID=q0bo258d0bosl06sqae9kinb16">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.1...">>},...],...}}}
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3959>},{transport,ranch_tcp},{connection,close},{pid,<0.3708.0>},{method,'POST'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadblock/">>},{path_info,[<<"uploadblock">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&cid=41">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Content-Length',<<"655">>},{<<"X-Lenovo-Range">>,<<"bytes=0-654">>},{'User-Agent',<<"WinHttpClient">>},{'Range',<<"bytes=0-654">>},{'Cookie',<<"PHPSESSID=q0bo258d0bosl06sqae9kinb16">>},{'Content-Type',<<"application/x-www-form-urlencoded">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"10.100.7.119">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<239,187,191,60,63,120,109,108,32,118,101,114,115,105,111,110,61,34,49,46,48,34,32,101,110,99,111,100,105,110,103,61,34,117,116,102,45,56,34,63,62,13,10,60,99,108,105,101,110,116,95,99,111,110,102,105,103,62,13,10,13,10,9,60,33,45,45,230,152,175,229,144,166,230,152,190,231,164,186,232,135,170,229,138,168,231,153,187,229,189,149,45,45,62,13,10,9,60,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,49,60,47,115,104,111,119,95,97,117,116,111,95,108,111,103,105,110,62,...>>},...]
+** Stacktrace: [{resource,uploadblock,3,[{file,"src/handler/resource.erl"},{line,79}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:39:21.064 [info] <0.3807.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:41:03.206 [info] <0.3860.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:41:03.209 [error] <0.3860.0> ** Handler resource terminating in handle/2
+   for the reason error:undef
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3970>},{transport,ranch_tcp},{connection,close},{pid,<0.3860.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&s=650">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Accept',<<"*/*">>},{'User-Agent',<<"curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"127.0.0.1">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{lager,error,["truncate file error :!!!!!!!!!!!!!!!!!!!!!!!!!!!!~s~n",[[116,114,117,110,99,97,116,101,32,102,105,108,101,32,"\"/opt/data/bee/upload/898/295/1352800837898295421\"",32,101,114,114,111,114,44,32,82,65,58,"error",44,32,82,66,58,[123,["badfun",44,10,[32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[123,["ok",44,10,[32,32,32,[[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],[32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],32,[[32,"  ",32,32],32,"  ",32,32],[32,"  ",32,32],32,"  ",32,32],"#Fun<fstream_pool.0.49638735>"],125]],125]]]],[]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,57}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,240}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:43:33.845 [info] <0.3938.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:43:33.847 [error] <0.3938.0> ** Handler resource terminating in handle/2
+   for the reason error:badarg
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3981>},{transport,ranch_tcp},{connection,close},{pid,<0.3938.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&s=2200">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Accept',<<"*/*">>},{'User-Agent',<<"curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"127.0.0.1">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{io_lib,format,["truncate file ~s error, RA:~s, RB:~s",["/opt/data/bee/upload/898/295/1352800837898295421",error,{badfun,{ok,#Fun<fstream_pool.0.49638735>}}]],[{file,"io_lib.erl"},{line,133}]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,56}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,240}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:50:28.256 [info] <0.4148.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:51:11.327 [info] <0.4172.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:51:11.330 [error] <0.4172.0> ** Handler resource terminating in handle/2
+   for the reason error:badarg
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.3993>},{transport,ranch_tcp},{connection,close},{pid,<0.4172.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&s=321">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Accept',<<"*/*">>},{'User-Agent',<<"curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"127.0.0.1">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{io_lib,format,["truncate file ~s error, RA:~s, RB:~s",["/opt/data/bee/upload/898/295/1352800837898295421",error,{badfun,{ok,#Fun<fstream_pool.0.125952424>}}]],[{file,"io_lib.erl"},{line,133}]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,56}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,240}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:54:01.310 [info] <0.4260.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:54:07.245 [info] <0.4265.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:54:07.246 [error] <0.4265.0> ** Handler resource terminating in handle/2
+   for the reason error:badarg
+** Options were []
+** Handler state was undefined
+** Request was [{socket,#Port<0.4005>},{transport,ranch_tcp},{connection,close},{pid,<0.4265.0>},{method,'GET'},{version,{1,1}},{peer,undefined},{host,<<"tp.lenovobee.com">>},{host_info,undefined},{port,80},{path,<<"/resource/uploadclose/1352800837898295421">>},{path_info,[<<"uploadclose">>,<<"1352800837898295421">>]},{qs,<<"t=0d14ffa963e9e86061a3aa0a595f609c640398ac8b32431644ba8369c1dee308b9a8f8656b6a1ccda4389663b339ee1db9c7ea4cc55972df07eaaeb7c6936f4664918fdee0c21010d454122693d145ef81d31705e2a94c57cf7132dd39d6ab477c1ce139f0ecbadff23a0e2efd4d70223e67bcf9acba791f&s=222">>},{qs_vals,undefined},{bindings,[]},{headers,[{'Accept',<<"*/*">>},{'User-Agent',<<"curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2">>},{'Connection',<<"close">>},{'X-Forwarded-For',<<"127.0.0.1">>},{'Host',<<"tp.lenovobee.com">>}]},{p_headers,[{'Connection',[<<"close">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{multipart,undefined},{buffer,<<>>},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined},{urldecode,{#Fun<cowboy_http.urldecode.2>,crash}}]
+** Stacktrace: [{io_lib,format,["truncate file ~s error, RA:~s, RB:~s",["/opt/data/bee/upload/898/295/1352800837898295421",error,{badfun,{ok,#Fun<fstream_pool.0.38057974>}}]],[{file,"io_lib.erl"},{line,133}]},{fstream,truncate,2,[{file,"src/fstream.erl"},{line,56}]},{resource,uploadclose,3,[{file,"src/handler/resource.erl"},{line,240}]},{cowboy_protocol,handler_handle,3,[{file,"src/cowboy_protocol.erl"},{line,313}]}]
+
+
+2012-11-20 16:56:18.636 [info] <0.4334.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:57:02.973 [info] <0.4359.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 16:58:34.955 [info] <0.4407.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:01:55.992 [info] <0.4510.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:02:00.024 [info] <0.4514.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:02:19.176 [info] <0.4527.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:26.385 [info] <0.4593.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:26.422 [info] <0.4596.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/906/041/1353402264906041121" 
+............................................................TmpPath  "/opt/data/tmp/nginx/3/0061344093" 
+2012-11-20 17:04:26.447 [info] <0.4596.0>@resource:upload:48 upload Response: {"data":{"md5":"cf7b2fe6c7b0fa8b5e0cc89bc5f68ab1"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 17:04:36.812 [info] <0.4603.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:36.893 [info] <0.4605.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/554/077/1353402275554077131" 
+............................................................TmpPath  "/opt/data/tmp/nginx/4/0061344094" 
+2012-11-20 17:04:36.931 [info] <0.4605.0>@resource:upload:48 upload Response: {"data":{"md5":"5a44c7ba5bbe4ec867233d67e4806848"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 17:04:36.975 [info] <0.4607.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:36.984 [info] <0.4609.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:37.100 [info] <0.4611.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/601/987/1353402275601987141" 
+............................................................TmpPath  "/opt/data/tmp/nginx/5/0061344095" 
+2012-11-20 17:04:37.100 [info] <0.4613.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/648/444/1353402275648444151" 
+............................................................TmpPath  "/opt/data/tmp/nginx/6/0061344096" 
+2012-11-20 17:04:37.140 [info] <0.4611.0>@resource:upload:48 upload Response: {"data":{"md5":"2b04df3ecc1d94afddff082d139c6f15"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 17:04:37.172 [info] <0.4613.0>@resource:upload:48 upload Response: {"data":{"md5":"8969288f4245120e7c3870287cce0ff3"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 17:04:37.240 [info] <0.4615.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:46.988 [info] <0.4622.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:04:46.988 [info] <0.4622.0>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/648/444/1353402275648444151" 
+2012-11-20 17:06:02.600 [info] <0.4662.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:06:02.688 [info] <0.4664.0>@resource:upload:42 
+............................................................FilePath "/opt/data/bee/upload/116/269/1353402361116269171" 
+............................................................TmpPath  "/opt/data/tmp/nginx/8/0061344098" 
+2012-11-20 17:06:02.723 [info] <0.4664.0>@resource:upload:48 upload Response: {"data":{"md5":"5a44c7ba5bbe4ec867233d67e4806848"},"status":true,"code":200,"msg":"upload ok"} 
+2012-11-20 17:06:08.999 [info] <0.4669.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:08:09.284 [info] <0.4732.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:09:03.173 [info] <0.4762.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:09:13.732 [info] <0.4770.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:09:19.780 [info] <0.4775.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:10:06.324 [info] <0.4801.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:10:16.611 [info] <0.4810.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:13:39.328 [info] <0.4916.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:18:10.573 [info] <0.5054.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:18:10.574 [info] <0.5054.0>@snail_action:reply:50 Path info [<<"uploadclose">>,<<"1352800837898295421">>]--------------- is replyed
+2012-11-20 17:19:40.146 [info] <0.5100.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:19:40.146 [info] <0.5100.0>@resource:uploadblock:119 -------upload key  expire::::1353403780
+2012-11-20 17:19:40.146 [info] <0.5100.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353403780"
+2012-11-20 17:19:40.147 [info] <0.5100.0>@resource:uploadblock:123 -------upload block key ::::"348CCA3BAF7A79DC5DFFB533C812718D9E20BCF61F561900EDE42122DA95F5A3"
+2012-11-20 17:19:40.147 [info] <0.5100.0>@snail_action:reply:50 Path info [<<"uploadblock">>,<<"1352800837898295421">>]--------------- is replyed
+2012-11-20 17:19:40.362 [info] <0.5103.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:19:40.362 [info] <0.5103.0>@snail_action:reply:50 Path info [<<"uploadclose">>,<<"1352800837898295421">>]--------------- is replyed
+2012-11-20 17:20:25.106 [info] <0.5128.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:20:25.107 [info] <0.5128.0>@resource:uploadblock:119 -------upload key  expire::::1353403825
+2012-11-20 17:20:25.107 [info] <0.5128.0>@resource:uploadblock:121 -------upload key  data ::::"1352800837898295421|1353403825"
+2012-11-20 17:20:25.107 [info] <0.5128.0>@resource:uploadblock:123 -------upload block key ::::"3DE2A0BBD5535C4AA348F2082DE081663F748D146A66ABF8E66D0485807F7622"
+2012-11-20 17:20:25.108 [info] <0.5128.0>@snail_action:reply:50 Path info [<<"uploadblock">>,<<"1352800837898295421">>]--------------- is replyed
+2012-11-20 17:20:25.323 [info] <0.5131.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:20:25.323 [info] <0.5131.0>@snail_action:reply:50 Path info [<<"uploadclose">>,<<"1352800837898295421">>]--------------- is replyed
+2012-11-20 17:21:34.917 [info] <0.5168.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:21:34.918 [info] <0.5168.0>@resource_util:generate_ngx_download_headers:75 Last file url .........."/data/bee/upload/898/295/1352800837898295421" 
+2012-11-20 17:21:34.918 [info] <0.5168.0>@snail_action:reply:50 Path info << [<<"downloadblock">>,<<"1352800837898295421">>] >> is replyed, status: << 200 >>
+2012-11-20 17:24:36.777 [info] <0.5261.0>@snail_action:run:21 request begin.............................
+2012-11-20 17:24:36.778 [info] <0.5261.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:24:36.778 [info] <0.5261.0>@snail_action:reply:51 Path info << [<<"uploadclose">>,<<"1352800837898295421">>] >> is replyed, status: << 200 >>
+2012-11-20 17:24:36.779 [info] <0.5261.0>@snail_action:reply:52 request   end.............................
+2012-11-20 17:25:24.793 [info] <0.5288.0>@snail_action:run:21 
+request begin.............................
+2012-11-20 17:25:24.794 [info] <0.5288.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:25:24.794 [info] <0.5288.0>@snail_action:reply:51 Path info << [<<"uploadclose">>,<<"1352800837898295421">>] >> is replyed, status: << 200 >>
+2012-11-20 17:25:24.794 [info] <0.5288.0>@snail_action:reply:52 
+request   end.............................
+2012-11-20 17:25:58.952 [info] <0.5307.0>@snail_action:run:21 
+
+request begin.............................
+2012-11-20 17:25:58.953 [info] <0.5307.0>@authd:authorize:72 authd fun list result is {ok,true}
+2012-11-20 17:25:58.953 [info] <0.5307.0>@snail_action:reply:51 Path info << [<<"uploadclose">>,<<"1352800837898295421">>] >> is replyed, status: << 200 >>
+2012-11-20 17:25:58.953 [info] <0.5307.0>@snail_action:reply:52 
+request   end.............................

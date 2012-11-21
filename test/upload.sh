@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -v -X POST "http://t.lenovobee.com/resource/upload/1345112691953272301?t=e1c590d58a894db94fb2be44da35fbec1051c3a2f397c7a827a3c5d5b9e6222637ea5c7ab41ebc707923dee096a1082c85144940d17dc68054f74d9a6e85211434602dcb0906086c9fa4a9013ebaa0fd&f=xxx"

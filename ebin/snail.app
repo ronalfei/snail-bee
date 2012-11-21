@@ -1,0 +1,10 @@
+{application,snail,
+             [{description,"snail for bee."},
+              {vsn,"0.1.0"},
+              {modules,[authd,cowboy_util,default,fstream,fstream_pool,md5,
+                        mochiweb_util,reloader,resource,resource_util,snail,
+                        snail_action,snail_sup,text,token,util,xxtea]},
+              {registered,[snail_sup]},
+              {applications,[kernel,stdlib,crypto,cowboy]},
+              {mod,{snail,[]}},
+              {env,[]}]}.
