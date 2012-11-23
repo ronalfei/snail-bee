@@ -122,7 +122,7 @@ get_file_md5_by_block(FilePath) ->
 			{ok, LastData} = fstream:pread(FilePath, LastOffSet, BlockSize),
 			LastContext = erlang:md5_update(NewContext, LastData),
 			Digest = erlang:md5_final(LastContext),
-			Md5 = bin2hex(Digest),
+			Md5 = string:to_lower(bin2hex(Digest)),
 			lager:info("file block md5 is ~p", [Md5]),
 			Md5
 	end.

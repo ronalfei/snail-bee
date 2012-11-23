@@ -239,11 +239,11 @@ uploadclose(Req, State, _Params) ->
 				true -> 
 					fstream:truncate(FilePath, Size),
 					Md5 = list_to_binary(util:get_file_md5_by_block(FilePath)),
-					Response = <<"{\"result\":1,\"errno\":70200,\"md5\":", Md5/binary, ",\"errmsg\":\"upload close ok\"}">>,
+					Response = <<"{\"result\":1,\"errno\":70200,\"md5\":\"", Md5/binary, "\",\"errmsg\":\"upload close ok\"}">>,
 					snail_action:reply(200, [], Response, Req1, State);
 				_    ->
 					Md5 = list_to_binary(util:get_file_md5_by_block(FilePath)),
-					Response = <<"{\"result\":1,\"errno\":70202,\"md5\":", Md5/binary, ",\"errmsg\":\"upload close ok\"}">>,
+					Response = <<"{\"result\":1,\"errno\":70202,\"md5\":\"", Md5/binary, "\",\"errmsg\":\"upload close ok\"}">>,
 					snail_action:reply(200, [], Response, Req1, State)
 			end
 	end.
