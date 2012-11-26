@@ -1,6 +1,6 @@
 -compile([{parse_transform, lager_transform}]).
 
--define(UPLOAD_DATA_PREFIX, "/opt/data/").
+-define(UPLOAD_DATA_PREFIX, "/home/lenovo_/data/").
 -define(DOWNLOAD_DATA_PREFIX, "/data/").
 %-include("../deps/cowboy/include/http.hrl").
 

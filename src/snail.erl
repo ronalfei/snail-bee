@@ -16,7 +16,7 @@ start() ->
 start(_Type, _Args) ->
 %%%you can config hosts here ,because cowboy support vhost
 	Dispatch = [
-		{	[<<"tp">>,<<"lenovobee">>,<<"com">>],
+		{	[<<"tp">>,<<"lenovows">>,<<"com">>],
 			[
 				{[<<"resource">>, '...'],	resource,	[]},
 				{[<<"file">>, '...'],		resource,	[]},
