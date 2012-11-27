@@ -4,13 +4,13 @@
 %%%
 %%% Created : 2012-6-11
 %%% -------------------------------------------------------------------
--module(msgbus_worker).
+-module(msgbus_pool).
 
 -behaviour(gen_server).
 %% --------------------------------------------------------------------
 %% Include files
 %% --------------------------------------------------------------------
--include("msgbus.hrl").
+-include("snail.hrl").
 
 %% --------------------------------------------------------------------
 %% External exports
@@ -33,7 +33,10 @@ stop(Config) ->
 	WorkerName = proplists:get_value("queue", Config),
     gen_server:call(WorkerName, stop).
 
-
+%Msg is proplists
+%push_oss will be defined in msgbus_pool.conf
+put_message(push_oss, Message) ->
+	gen_server:call(push_oss, {put, Message}).
 
 %status(WorkerName) -> 
 %	gen_server:call(WorkerName, status).
@@ -53,8 +56,6 @@ stop(Config) ->
 init(Config) ->
 	{Connection, Channel, Queue} = connect_amqp_server(Config),
 	lager:info("Init worker: ~p ,channel: ~p  successful self Pid:~p", [Queue, Channel, self()]),
-	erlang:send_after(2000, self(), kickoff), 
-	%erlang:send( self(), kickoff), 
     {ok, #state{config=Config, connection=Connection, channel=Channel, queue=Queue, success=0, failed=0}}.
 
 %% --------------------------------------------------------------------
@@ -65,6 +66,7 @@ init(Config) ->
 %%          {noreply, State}               |
 %%          {noreply, State, Timeout}      |
 %%          {stop, Reason, Reply, State}   | (terminate/2 is called)
+
 %%          {stop, Reason, State}            (terminate/2 is called)
 %% --------------------------------------------------------------------
 handle_call(stop,_From, State) ->
@@ -75,12 +77,15 @@ handle_call(stop,_From, State) ->
 	lager:info("worker is stoped"),
 	{stop, shutdown,stoped, #state{} };
 
+%Message type is proplists
+handle_call({put, Message}, _From, State) ->
+	Channel		= State#state.channel,
+	QueueName	= State#state.queue,
+	Msg = mochijson2:encode(Message),
+	lager:debug("json msg is ~p..............~n", [Msg]),
+	rabbitc:push_message(Channel, QueueName, Msg),
+	{ reply, {ok, Msg} , State};
 
-%%handle_call(status, _From, State) ->
-%%	Socket_list = State#state.sockets,
-%%	Socket_nums = State#state.numbers,
-%%	{ reply, {Socket_nums, Socket_list} , State};
-%%
 
 handle_call(_Request, _From, State) ->
     Reply = ok,
@@ -118,24 +123,24 @@ handle_cast(_Msg, State) ->
 %%          {stop, Reason, State}            (terminate/2 is called)
 %% --------------------------------------------------------------------
 
-handle_info(kickoff, State) ->
-	Channel	= State#state.channel,
-	Queue	= State#state.queue,
-	case rabbitc:pull_message(Channel, Queue) of
-		{false, empty} ->
-			erlang:send_after(2000, self(), kickoff),
-			{noreply, State};
-		{Tag, Message} ->
-			do_job(State#state.config, Message, State#state.success),
-			rabbitc:ack_message(Channel, Tag),
-			self() ! kickoff,
-			Successes = State#state.success +1 ,
-			NewState = State#state{success = Successes},
-			{noreply, NewState};
-		What -> 
-			lager:error("EEEEError: ~p", [What])
-
-	end;
+%%handle_info(kickoff, State) ->
+%%	Channel	= State#state.channel,
+%%	Queue	= State#state.queue,
+%%	case rabbitc:pull_message(Channel, Queue) of
+%%		{false, empty} ->
+%%			erlang:send_after(2000, self(), kickoff),
+%%			{noreply, State};
+%%		{Tag, Message} ->
+%%			do_job(State#state.config, Message, State#state.success),
+%%			rabbitc:ack_message(Channel, Tag),
+%%			self() ! kickoff,
+%%			Successes = State#state.success +1 ,
+%%			NewState = State#state{success = Successes},
+%%			{noreply, NewState};
+%%		What -> 
+%%			lager:error("EEEEError: ~p", [What])
+%%
+%%	end;
 
 handle_info(_Info, State) ->
     {noreply, State}.
@@ -172,8 +177,8 @@ connect_amqp_server(ConfigProplists) ->
 	{Connection, Channel, Queue}.
 	
 
-do_job(Config, Message, SuccessNumber) ->
-	Worker = list_to_atom(proplists:get_value("worker", Config)),
-	{amqp_msg, _MsgHeader, Msg} = Message,
-	Msg1 = binary_to_list(Msg),
-	Worker:run(Msg1, SuccessNumber).
+%do_job(Config, Message, SuccessNumber) ->
+%	Worker = list_to_atom(proplists:get_value("worker", Config)),
+%	{amqp_msg, _MsgHeader, Msg} = Message,
+%	Msg1 = binary_to_list(Msg),
+%	Worker:run(Msg1, SuccessNumber).

@@ -58,7 +58,8 @@ start(_Type, _Args) ->
 %		cowboy_http_protocol, [{dispatch, Dispatch}]
 %	),
 %%%%-------------------------
-	snail_sup:start_link().
+	snail_sup:start_link(),
+	msgbus_pool_sup:start_link().
 
 stop(_State) ->
 	ok.

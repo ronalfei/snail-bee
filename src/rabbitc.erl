@@ -3,7 +3,7 @@
 %Create by vim: ts=4
 
 -module(rabbitc).
--include("msgbus.hrl").
+-include("snail.hrl").
 
 -compile(export_all).
 

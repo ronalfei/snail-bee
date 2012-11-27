@@ -2,6 +2,7 @@
 
 -define(UPLOAD_DATA_PREFIX, "/home/lenovo_/data/").
 -define(DOWNLOAD_DATA_PREFIX, "/data/").
+-include("deps/amqp_client/include/amqp_client.hrl").
 %-include("../deps/cowboy/include/http.hrl").
 
 -record(token,

@@ -43,6 +43,19 @@ upload(Req, State, _Params) ->
 	NewReq = lists:last(Form),
 	case file:rename(TmpPath, FilePath) of 
 		ok ->
+			%%%%-------send a task to ali oss's rabbitmq
+			try
+				AliKey = <<"upload/", Rid/binary>>,
+				lager:debug("1111111111111111111111111111111111111111111111"),
+				AliBucket = Token#token.app_name,
+				Message = [{<<"filepath">>, list_to_binary(FilePath)}, {<<"bucket">>, list_to_binary(AliBucket)}, {<<"key">>, AliKey}],
+				lager:debug("22222222222222222222222222222222222222222222222"),
+				msgbus_pool:put_message(push_oss, Message),
+				lager:debug("33333333333333333333333333333333333333333333333")
+			catch _A:_B ->
+				lager:error("catch push msg to ali rabbitmq error,AAAA:~p======BBBB:~p", [_A, _B])
+			end,
+			%%%%-------------send over-------------------
 			Response = <<"{\"data\":{\"md5\":\"", Md5/binary, "\"},\"status\":true,\"code\":200,\"msg\":\"upload ok\"}">>,
 			%Response = <<"uploadok">>,
 			lager:info("upload Response: ~s ~n", [Response]),
@@ -238,6 +251,20 @@ uploadclose(Req, State, _Params) ->
 			case Size < FileSize of 
 				true -> 
 					fstream:truncate(FilePath, Size),
+					%%%%-------send a task to ali oss's rabbitmq
+					try
+						AliKey = <<"upload/", Rid/binary>>,
+						lager:debug("4444444444444444444444444444444444444444444444"),
+						AliBucket = Token#token.app_name,
+						Message = [{<<"filepath">>, list_to_binary(FilePath)}, {<<"bucket">>, list_to_binary(AliBucket)}, {<<"key">>, AliKey}],
+						lager:debug("5555555555555555555555555555555555555555555555"),
+						msgbus_pool:put_message(push_oss, Message),
+						lager:debug("6666666666666666666666666666666666666666666666")
+					catch _A:_B ->
+						lager:error("catch push msg to ali rabbitmq error,AAAA:~p======BBBB:~p", [_A, _B])
+					end,
+					%%%%-------------send over-------------------
+
 					Md5 = list_to_binary(util:get_file_md5_by_block(FilePath)),
 					Response = <<"{\"result\":1,\"errno\":70200,\"md5\":\"", Md5/binary, "\",\"errmsg\":\"upload close ok\"}">>,
 					snail_action:reply(200, [], Response, Req1, State);
