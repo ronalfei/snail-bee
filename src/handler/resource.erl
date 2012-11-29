@@ -80,9 +80,27 @@ download(Req, State, _Params) ->
         {error, Reason } ->
             snail_action:reply(401, [{<<"www-authenticate">>, Reason}], Reason, Req, State);
         {ok, true} ->
-			%% ps: headers include x-accl-redirct-url
-			{Headers, Req1} = resource_util:generate_ngx_download_headers(Token, Req),
-			snail_action:reply(200, Headers, [], Req1, State)
+			%%first to check is file in oss
+			{AgentType, Req1} = cowboy_util:get_user_agent_type(Req),
+			Location = oss_locate([Token#token.app_name
+						, "upload"
+						, Token#token.user_id
+						, binary_to_list(Rid)
+						, Token#token.resource_name
+						, AgentType]),
+			lager:info(".......ali location: ~p..........................", [Location]),
+			case Location of
+				{ok, OssUrl} ->
+					Status = 301,
+					lager:debug("redirect Urlllllll: ~s", [OssUrl]),
+					Headers = [{<<"Location">>, OssUrl}, {<<"Cache-Control">>,<<"nocache">>}],
+					snail_action:reply(Status, Headers, [], Req1, State);
+			    {error, _}->
+				%%second
+				%% ps: headers include x-accl-redirct-url
+					{Headers, Req2} = resource_util:generate_ngx_download_headers(Token, Req1),
+					snail_action:reply(200, Headers, [], Req2, State)
+			end
     end.
 	
 
@@ -277,5 +295,33 @@ uploadclose(Req, State, _Params) ->
 
 %%-------------------internal function----------------
 
+%oss_locate([AppName, Pool, Uid, Rid, Name, Agent]) ->
+oss_locate([_AppName, _Pool, _Uid, _Rid, _Name, _Agent]) ->
+    Url = io_lib:format("http://127.0.0.1:9070/fRail/locate?collection=~s&pool=~s&uid=~s&rid=~s&name=~s&agent=~s", [
+        _AppName,
+        _Pool,
+        _Uid,
+        _Rid,
+        _Name,
+        _Agent
+    ]),
+	try
+		lager:debug("url detail: ~s...................", [Url]),
+    	{ok, {_Method, _Headers, Body}}= httpc:request(lists:flatten(Url)),
+    	lager:debug("get locate ReqRet..........~p ", [Body]),
+    	{struct, DecodedBody} = mochijson2:decode(Body),
+    	lager:debug("Decode body is -----------------------~p ", [DecodedBody]),
+		Location = proplists:get_value(<<"location">>, DecodedBody),
+    	lager:debug("location: ~p", [Location]),
+		case Location of
+			<<"oss:", RestUrl/binary>> ->
+				{ok, RestUrl};
+			_ ->{error, <<>>} 
+		end
+	catch _A:_B ->
+		lager:error("!!!! Error in octopus ~p  ====== ~p ~n " , [_A, _B] ),
+		{error, <<"octopus error">>}
+	end.
+%	{error, <<>>}.
 
 

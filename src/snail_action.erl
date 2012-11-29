@@ -15,11 +15,12 @@
 %			lager:debug("path info any -----------~p", [_Any]),
 %			not_found(Module, Req, State)
 %	end.
-%
+
 
 run(Module, Req, State) ->
 	lager:info("~n~nrequest begin............................."),
 	{Path_info, Req} = cowboy_req:path_info(Req), 
+	lager:debug("~nRREEQQ:::~n~n ~p", [Req]),
 	case Path_info of
 		[] -> erlang:apply(Module, index, [Req, State]);
 		[ActionBin | TailParam]  -> 

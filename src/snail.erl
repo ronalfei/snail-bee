@@ -58,6 +58,8 @@ start(_Type, _Args) ->
 %		cowboy_http_protocol, [{dispatch, Dispatch}]
 %	),
 %%%%-------------------------
+	application:start(inets),
+
 	snail_sup:start_link(),
 	msgbus_pool_sup:start_link().
 

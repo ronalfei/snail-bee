@@ -33,19 +33,8 @@ get_tail_path(Rid) ->
 %% @doc Req is cowboy's req
 %% @doc return {[Headers], Req2}
 generate_ngx_download_headers(Token, Req) ->
-	{UserAgent, Req1} = cowboy_req:header('User-Agent', Req, undefined),
-    lager:debug("useragent is ~p ~n", [UserAgent]),
-    AgentType = case re:run(UserAgent, "MSIE") of
-    nomatch ->
-        case re:run(UserAgent, "Firefox") of
-        nomatch ->
-            undefined;
-        _ ->
-            firefox
-        end;
-    _ ->
-        msie
-    end,
+	{AgentType, Req1} = cowboy_util:get_user_agent_type(Req),
+
 	RawFileName = Token#token.resource_name,
     lager:debug("raw file name ~p", [RawFileName]),
 
@@ -81,7 +70,6 @@ generate_ngx_download_headers(Token, Req) ->
     ],
 	{Headers, Req1}.
 	
-
 get_mfs_dir(_Rid) ->
 	"".
 

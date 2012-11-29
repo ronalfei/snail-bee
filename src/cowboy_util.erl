@@ -64,7 +64,22 @@ get_range(Req) ->
 			{ util:list_to_integer(Start), util:list_to_integer(End) }
 	end.
 
-
+get_user_agent_type(Req) ->
+    {UserAgent, Req1} = cowboy_req:header('User-Agent', Req, undefined),
+    lager:debug("...........useragent is ~p ~n", [UserAgent]),
+    AgentType = case re:run(UserAgent, "MSIE") of
+        nomatch ->
+            case re:run(UserAgent, "Firefox") of
+            nomatch ->
+                undefined;
+            _ ->
+                firefox
+            end;
+        _ ->
+            msie
+    end,
+    lager:debug("...........agent type is ~p ~n", [AgentType]),
+    {AgentType, Req1}.
 
 %%this is only for cowboy's multipart form parse fields
 %% @doc return proplist

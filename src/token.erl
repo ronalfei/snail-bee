@@ -50,7 +50,7 @@ get(Req, QueryString) ->
 decode(EncryptedToken, Service) ->
 	try
 		{ok, DecryptedBin} = xxtea:decrypt(util:hex2bin(EncryptedToken), ?XXTEA_KEY),
-		lager:debug("~n++++++++++++++++++decryptedBin:~p++++++++++++++++++~n", [DecryptedBin]),
+		%lager:debug("~n++++++++++++++++++decryptedBin:~p++++++++++++++++++~n", [DecryptedBin]),
 		Text = string:strip(binary_to_list(DecryptedBin), right, $\0),
 		lager:debug("~n++++++++++++++++++Text:~p++++++++++++++++++~n", [Text]),
 		{ok, Token} = parse(Text, Service),
