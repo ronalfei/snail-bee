@@ -98,7 +98,9 @@ handle_call({curry, pwrite, Path}, _From, State) ->
         Curry = fun(Location, Bytes) ->
             case file:pwrite(IoDevice, Location, Bytes) of
         		ok -> {ok, true};
-        		_ -> {error, false}
+        		_Any -> 
+					lager:error("!!!!!!!!!!pwrite return ~p !!!!!!!!!!!!!!!!1", [_Any]),
+					{error, false}
         	end
         end,
 
@@ -247,6 +249,7 @@ get_device(Pool, Path, Atom) ->
 open_file(Path, read) ->
     file:open(Path,[
           read,  {read_ahead, ?READ_AHEAD_SIZE},
+          write, {delayed_write, ?DELAY_WRITE_SIZE, ?DELAY_WRITE_TIME},
           binary
     ]);
 open_file(Path, write) ->

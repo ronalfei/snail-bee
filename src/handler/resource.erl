@@ -46,12 +46,9 @@ upload(Req, State, _Params) ->
 			%%%%-------send a task to ali oss's rabbitmq
 			try
 				AliKey = <<"upload/", Rid/binary>>,
-				lager:debug("1111111111111111111111111111111111111111111111"),
 				AliBucket = Token#token.app_name,
 				Message = [{<<"filepath">>, list_to_binary(FilePath)}, {<<"bucket">>, list_to_binary(AliBucket)}, {<<"key">>, AliKey}],
-				lager:debug("22222222222222222222222222222222222222222222222"),
-				msgbus_pool:put_message(push_oss, Message),
-				lager:debug("33333333333333333333333333333333333333333333333")
+				msgbus_pool:put_message(push_oss, Message)
 			catch _A:_B ->
 				lager:error("catch push msg to ali rabbitmq error,AAAA:~p======BBBB:~p", [_A, _B])
 			end,
@@ -139,7 +136,7 @@ uploadblock(Req, State, _Params) ->
 				true ->
 					%%todo: write content to file
 					{ok, Body, Req2} = cowboy_req:body(Req1),
-					lager:debug("upload block body is ~p", [Body]),
+					%lager:debug("upload block body is ~p", [Body]),
 					case fstream:pwrite(FilePath, Start, Body) of
 						{ok, _} ->
 							lager:debug("write file ok"),
@@ -155,6 +152,7 @@ uploadblock(Req, State, _Params) ->
 							Response = io_lib:format(<<"{\"result\":1,\"errno\":70200,\"errmsg\":\"upload block ok\",\"cid\":~s,\"data\":{\"md5\":\"~s\",\"key\":\"~s\"}}">>, [Cid, Md5, Key]),
 							snail_action:reply(200, [], Response, Req2, State);
 						{error, Msg} ->
+							lager:error("!!!!!!!!!!!!!!!!pwrite error:~p", [Msg]),
 							Response = <<"{\"result\":0,\"errno\":70500,\"errmsg\":\"upload block error\",\"cid\":\"",Cid/binary,"\",\"data\":{}}">>,
 							snail_action:reply(200, [{<<"X-Lenovo-Status">>, Msg}], Response, Req2, State)
 					end
@@ -268,7 +266,8 @@ uploadclose(Req, State, _Params) ->
 			lager:debug("Size is ~p, FileSize is ~p", [Size, FileSize]),
 			case Size < FileSize of 
 				true -> 
-					fstream:truncate(FilePath, Size),
+					Tret = fstream:truncate(FilePath, Size),
+					lager:debug("!!!!!!!!!!!!!!!!tret : ~p", [Tret]),
 					%%%%-------send a task to ali oss's rabbitmq
 					try
 						AliKey = <<"upload/", Rid/binary>>,
@@ -287,6 +286,20 @@ uploadclose(Req, State, _Params) ->
 					Response = <<"{\"result\":1,\"errno\":70200,\"md5\":\"", Md5/binary, "\",\"errmsg\":\"upload close ok\"}">>,
 					snail_action:reply(200, [], Response, Req1, State);
 				_    ->
+					%%%%-------send a task to ali oss's rabbitmq
+					try
+						AliKey = <<"upload/", Rid/binary>>,
+						lager:debug("7777777777777777777777777777"),
+						AliBucket = Token#token.app_name,
+						Message = [{<<"filepath">>, list_to_binary(FilePath)}, {<<"bucket">>, list_to_binary(AliBucket)}, {<<"key">>, AliKey}],
+						lager:debug("888888888888888888888888888"),
+						msgbus_pool:put_message(push_oss, Message),
+						lager:debug("9999999999999999999999999999")
+					catch _A:_B ->
+						lager:error("catch push msg to ali rabbitmq error,AAAA:~p======BBBB:~p", [_A, _B])
+					end,
+					%%%%-------------send over-------------------
+
 					Md5 = list_to_binary(util:get_file_md5_by_block(FilePath)),
 					Response = <<"{\"result\":1,\"errno\":70202,\"md5\":\"", Md5/binary, "\",\"errmsg\":\"upload close ok\"}">>,
 					snail_action:reply(200, [], Response, Req1, State)

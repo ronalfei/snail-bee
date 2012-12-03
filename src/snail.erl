@@ -24,6 +24,15 @@ start(_Type, _Args) ->
 				{'_', default, []}
 			]
 		},
+		{	[<<"tp">>,<<"hivews">>,<<"com">>],
+			[
+				{[<<"resource">>, '...'],	resource,	[]},
+				{[<<"file">>, '...'],		resource,	[]},
+				{[<<"auth">>, '...'],		authd,		[]},
+				{'_', default, []}
+			]
+		},
+
 
 		{'_', [
             {'_', default, [{error, 404}]}

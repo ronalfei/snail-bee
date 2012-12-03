@@ -1,7 +1,7 @@
 -module(fstream).
 -compile(export_all).
 
-%%-include("snail.hrl").
+-include("snail.hrl").
 
 append(Path, Bytes) ->
     try
@@ -13,13 +13,20 @@ append(Path, Bytes) ->
     end.
 
 pwrite(Path, Location, Bytes) ->
-    try
-        {ok, Out} = fstream_pool:curry(pwrite, Path),
-        {ok, true} = Out(Location, Bytes)
-    catch _:Exception ->
-        lager:error("fstream pwrite exception: ~p", [Exception]),
-        {error, "failed to write file"}
-    end.
+	lager:error("!!!!!!!!!!!!!!!!!!!!!!!!1111111111111111111111111111111111111111111111111111111111"),
+    {ok, Out} = fstream_pool:curry(pwrite, Path),
+    lager:error("!!!!!!!!!!!!!!!!!!!!!!!!Out: ~p", [Out]),
+    {ok, true} = Out(Location, Bytes).
+
+%    try
+%        lager:error("!!!!!!!!!!!!!!!!!!!!!!!!1111111111111111111111111111111111111111111111111111111111"),
+%        {ok, Out} = fstream_pool:curry(pwrite, Path),
+%        lager:error("!!!!!!!!!!!!!!!!!!!!!!!!Out: ~p", [Out]),
+%        {ok, true} = Out(Location, Bytes)
+%    catch _R:Exception ->
+%        lager:error("!!!!!!!!!!!!!!!!!!!!!!!!fstream pwrite Reason : ~p ,exception: ~p", [_R, Exception]),
+%        {error, "failed to write file"}
+%    end.
 
 pread(Path, Location, Number) ->
     try
@@ -67,4 +74,3 @@ close(Path) ->
 		lager:error("close file error :!!!!!!!!!!!!!!!!!!!!!!!!!!!!~s~n", [ErrorReason]),
 		{error, ErrorReason}
 	end.
-		

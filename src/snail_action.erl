@@ -4,38 +4,38 @@
 %-compile(export_all).
 -export([run/3, reply/5]).
 
-%run(Module, Req, State) ->
-%	{Path_info, Req} = cowboy_req:path_info(Req), 
-%	case Path_info of
-%		[] -> erlang:apply(Module, index, [Req, State]);
-%		[ActionBin | TailParam]  -> 
-%			Action = erlang:binary_to_atom(ActionBin, latin1),
-%			erlang:apply(Module, Action, [Req, State, TailParam]);
-%		_Any -> 
-%			lager:debug("path info any -----------~p", [_Any]),
-%			not_found(Module, Req, State)
-%	end.
-
-
 run(Module, Req, State) ->
-	lager:info("~n~nrequest begin............................."),
 	{Path_info, Req} = cowboy_req:path_info(Req), 
-	lager:debug("~nRREEQQ:::~n~n ~p", [Req]),
 	case Path_info of
 		[] -> erlang:apply(Module, index, [Req, State]);
 		[ActionBin | TailParam]  -> 
 			Action = erlang:binary_to_atom(ActionBin, latin1),
-			try	erlang:apply(Module, Action, [Req, State, TailParam])
-			catch E1:E2 ->
-				case E2 of
-					undef -> not_found(Module, Req, State);
-					_	  -> server_error(Module, Req, State, {E1,E2})
-				end
-			end;
+			erlang:apply(Module, Action, [Req, State, TailParam]);
 		_Any -> 
 			lager:debug("path info any -----------~p", [_Any]),
 			not_found(Module, Req, State)
 	end.
+
+
+%run(Module, Req, State) ->
+%	lager:info("~n~nrequest begin............................."),
+%	{Path_info, Req} = cowboy_req:path_info(Req), 
+%	lager:debug("~nRREEQQ:::~n~n ~p", [Req]),
+%	case Path_info of
+%		[] -> erlang:apply(Module, index, [Req, State]);
+%		[ActionBin | TailParam]  -> 
+%			Action = erlang:binary_to_atom(ActionBin, latin1),
+%			try	erlang:apply(Module, Action, [Req, State, TailParam])
+%			catch E1:E2 ->
+%				case E2 of
+%					undef -> not_found(Module, Req, State);
+%					_	  -> server_error(Module, Req, State, {E1,E2})
+%				end
+%			end;
+%		_Any -> 
+%			lager:debug("path info any -----------~p", [_Any]),
+%			not_found(Module, Req, State)
+%	end.
 
 not_found(Module, Req, State) ->
 	lager:debug("This controller ~s action -> not found", [Module]),
