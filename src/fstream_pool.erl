@@ -261,7 +261,7 @@ open_file(Path, write) ->
 
 open_file(Path, append) ->
     file:open(Path,[
-          %read,  {read_ahead, ?READ_AHEAD_SIZE},
+          read,  {read_ahead, ?READ_AHEAD_SIZE},
           write, {delayed_write, ?DELAY_WRITE_SIZE, ?DELAY_WRITE_TIME},
           binary 
     ]).

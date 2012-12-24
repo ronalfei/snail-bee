@@ -21,6 +21,7 @@ start(_Type, _Args) ->
 				{[<<"resource">>, '...'],	resource,	[]},
 				{[<<"file">>, '...'],		resource,	[]},
 				{[<<"auth">>, '...'],		authd,		[]},
+                {[<<"logo">>, '...'],       logo,       []},
 				{'_', default, []}
 			]
 		},
@@ -29,6 +30,7 @@ start(_Type, _Args) ->
 				{[<<"resource">>, '...'],	resource,	[]},
 				{[<<"file">>, '...'],		resource,	[]},
 				{[<<"auth">>, '...'],		authd,		[]},
+                {[<<"logo">>, '...'],       logo,       []},
 				{'_', default, []}
 			]
 		},

@@ -306,8 +306,45 @@ uploadclose(Req, State, _Params) ->
 			end
 	end.
 
-%%-------------------internal function----------------
 
+
+
+%%
+%%---------------------aspera api-------------------
+%%
+getfiledownpath(Req, State, _Params) ->
+    AsperaPrefix = <<"/home/aspera/download/">>,
+    {[_Action, Rid1 | _Tail], Req}  = cowboy_req:path_info(Req),
+    %%客户端可能会包含文件后缀来请求，所以为了兼容， 需要去掉后缀名
+    <<Rid:19/binary, _Rest/binary>> = Rid1,
+    EncryptedToken = token:get(Req, ""),
+    {ok, Token} = token:decode(EncryptedToken, ""),
+    AuthRet = authd:authorize("uploadblock", Rid, Token),
+
+    case AuthRet of
+        {error, Reason } ->
+            Response = <<"{\"result\":0,\"errno\":70401,\"errmsg\":\"upload close error\",\"data\":{}}">>,
+            snail_action:reply(200, [{<<"X-Lenovo-Status">>, 70401}, {<<"X-Lenovo-Msg">>, Reason}], Response, Req, State);
+        {ok, true}       ->
+            FilePath = lists:flatten(resource_util:get_upload_path(Token#token.app_name, Rid)),
+            AsperaDownPathBin = <<AsperaPrefix/binary, Rid/binary>>,
+            AsperaDownPathStr = binary_to_list(AsperaDownPathBin),
+            Command = io_lib:format("ln -s ~s ~s", [FilePath, AsperaDownPathStr]),
+            lager:info("aspera download cmd:~n....~s....", [Command]),
+            try
+                os:cmd(Command),
+                Response = <<"{\"result\":1,\"errno\":70200,\"downpath\":\"download/", Rid/binary, "\",\"errmsg\":\"get aspera path ok\"}">>,
+                snail_action:reply(200, [], Response, Req, State)
+            catch _A:_B ->
+                lager:error("!!!!!!!!!!!!!!!!!!!get aspera download path error (A:~s)!!!(B:~s)", [_A, _B]),
+                Response1 = <<"{\"result\":0,\"errno\":70500,\"downpath\":\"\",\"errmsg\":\"get aspera path error\"}">>,
+                snail_action:reply(200, [], Response1, Req, State)
+            end
+    end.
+
+%%-----------------------------------------------------------------
+
+%%-------------------internal function----------------
 %oss_locate([AppName, Pool, Uid, Rid, Name, Agent]) ->
 oss_locate([_AppName, _Pool, _Uid, _Rid, _Name, _Agent]) ->
     Url = io_lib:format("http://127.0.0.1:9070/fRail/locate?collection=~s&pool=~s&uid=~s&rid=~s&name=~s&agent=~s", [

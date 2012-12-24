@@ -70,6 +70,29 @@ generate_ngx_download_headers(Token, Req) ->
     ],
 	{Headers, Req1}.
 	
+
+%%-------------------------
+%% @doc Req is cowboy's req
+%% @doc return {[Headers], Req2}
+generate_ngx_view_headers(Token, Req) ->
+    FilePath = resource_util:get_download_path(Token#token.app_name, Token#token.resource_id),
+    Etag = token:get_etag_value(Token),
+    NewQueryString = case Etag of
+        [] -> "";
+        _ ->  "?etag="++Etag
+    end,
+    Url = lists:flatten(io_lib:format("~s~s", [FilePath, NewQueryString])),
+    lager:info("Last file url ..........~p ~n", [Url]),
+    %let nginx determine the correct content type
+    Headers = [
+        {<<"X-Accel-Redirect">>, Url},
+        {<<"Content-Type">>, mime:type(<<"gif">>)}
+    ],
+    {Headers, Req}.
+
+
+
+%------------------------------------
 get_mfs_dir(_Rid) ->
 	"".
 
