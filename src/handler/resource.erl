@@ -23,8 +23,6 @@ index(Req, State, _Params) ->
 	snail_action:reply(200, [], <<"action index">>, Req, State).
 
 upload(Req, State, _Params) ->
-	lager:debug("~n~n ~p ~n~n", [Req]),
-
 	lager:debug("This controller ~s, action -> upload, Params is ~p ", [?MODULE, _Params]),
 
 	{[_Action, Rid| _Tail], _Req} = cowboy_req:path_info(Req),
@@ -44,11 +42,13 @@ upload(Req, State, _Params) ->
 	case file:rename(TmpPath, FilePath) of 
 		ok ->
 			%%%%-------send a task to ali oss's rabbitmq
+			send_preview_task(Rid, Token),
 			try
 				AliKey = <<"upload/", Rid/binary>>,
 				AliBucket = Token#token.app_name,
 				Message = [{<<"filepath">>, list_to_binary(FilePath)}, {<<"bucket">>, list_to_binary(AliBucket)}, {<<"key">>, AliKey}],
-				msgbus_pool:put_message(push_oss, Message)
+				msgbus_pool:put_message(push_oss, Message),
+				ok
 			catch _A:_B ->
 				lager:error("catch push msg to ali rabbitmq error,AAAA:~p======BBBB:~p", [_A, _B])
 			end,
@@ -163,7 +163,7 @@ uploadblock(Req, State, _Params) ->
 %%--但是如果客户端有代理服务器，那么这个头就会被抹掉。悲剧
 %% @doc get_download_path to nginx, let nginx do block download self
 downloadblock(Req, State, _Params) ->
-	lager:debug("reqqqqq ~p", [Req]),
+	%lager:debug("reqqqqq ~p", [Req]),
     {[_Action, Rid | _Tail], Req}  = cowboy_req:path_info(Req),
 
     EncryptedToken = token:get(Req, ""),
@@ -276,7 +276,8 @@ uploadclose(Req, State, _Params) ->
 						Message = [{<<"filepath">>, list_to_binary(FilePath)}, {<<"bucket">>, list_to_binary(AliBucket)}, {<<"key">>, AliKey}],
 						lager:debug("5555555555555555555555555555555555555555555555"),
 						msgbus_pool:put_message(push_oss, Message),
-						lager:debug("6666666666666666666666666666666666666666666666")
+						lager:debug("6666666666666666666666666666666666666666666666"),
+						send_preview_task(Rid, Token)
 					catch _A:_B ->
 						lager:error("catch push msg to ali rabbitmq error,AAAA:~p======BBBB:~p", [_A, _B])
 					end,
@@ -313,7 +314,7 @@ uploadclose(Req, State, _Params) ->
 %%---------------------aspera api-------------------
 %%
 getfiledownpath(Req, State, _Params) ->
-    AsperaPrefix = <<"/home/aspera/download/">>,
+    AsperaPrefix = <<"/home/lenovo_/data/aspera_data/download/">>,
     {[_Action, Rid1 | _Tail], Req}  = cowboy_req:path_info(Req),
     %%客户端可能会包含文件后缀来请求，所以为了兼容， 需要去掉后缀名
     <<Rid:19/binary, _Rest/binary>> = Rid1,
@@ -374,4 +375,14 @@ oss_locate([_AppName, _Pool, _Uid, _Rid, _Name, _Agent]) ->
 	end.
 %	{error, <<>>}.
 
-
+send_preview_task(Rid, Token) ->
+    FilePath = list_to_binary(lists:flatten(resource_util:get_upload_path(Token#token.app_name, Rid))),
+	Ext = list_to_binary(Token#token.resource_type),
+	TargetPath = FilePath,
+	Message = [		{<<"filepath">>, FilePath}
+				,	{<<"ext">>, Ext}
+				,	{<<"targetpath">>, TargetPath}
+				,	{<<"option">>, Ext}
+			  ],
+	msgbus_pool:put_message(create_preview, Message),
+	ok.

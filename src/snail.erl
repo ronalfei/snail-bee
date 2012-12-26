@@ -70,7 +70,6 @@ start(_Type, _Args) ->
 %	),
 %%%%-------------------------
 	application:start(inets),
-
 	snail_sup:start_link(),
 	msgbus_pool_sup:start_link().
 

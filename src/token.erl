@@ -15,7 +15,7 @@
 %%    , user_id
 %%    , user_ip				%% client request ip
 %%    , resource_id			%% rid
-%%    , resource_type
+%%    , resource_type       %% this is resource_extention
 %%    , resource_size
 %%    , expiration			%% token expire time
 %%    , etag					%% how to use it?

@@ -35,12 +35,8 @@ stop(Config) ->
 
 %Msg is proplists
 %push_oss will be defined in msgbus_pool.conf
-put_message(push_oss, Message) ->
-	gen_server:call(push_oss, {put, Message});
-
-put_message(push_oss_revision, Message) ->
-	gen_server:call(push_oss_revision, {put, Message}).
-	
+put_message(WorkerName, Message) ->
+	gen_server:call(WorkerName, {put, Message}).
 
 %status(WorkerName) -> 
 %	gen_server:call(WorkerName, status).

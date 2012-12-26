@@ -31,7 +31,6 @@ index(Req, State) ->
 index(Req, State, _Params) ->
 	%----auth request's rid and token will be get from original url----
 	{OriginalUri, Req} = cowboy_req:header(<<"X-Original-Uri">> ,Req,  ""),
-	lager:debug("~n~n ~p ~n~n", [Req]),
 	lager:debug("OriginalUri : ~p~n", [OriginalUri]), 
 	{Path, QueryString, Fragment} = mochiweb_util:urlsplit_path(binary_to_list(OriginalUri)),
 	lager:debug("Path : ~p, QueryString :~s, Fragment :~p", [Path, QueryString, Fragment]),
