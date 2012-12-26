@@ -82,7 +82,7 @@ handle_call({put, Message}, _From, State) ->
 	Channel		= State#state.channel,
 	QueueName	= State#state.queue,
 	Msg = mochijson2:encode(Message),
-	lager:debug("json msg is ~p..............~n", [Msg]),
+	%lager:debug("json msg is ~p..............~n", [Msg]),
 	rabbitc:push_message(Channel, QueueName, Msg),
 	{ reply, {ok, Msg} , State};
 

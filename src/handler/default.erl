@@ -4,7 +4,7 @@
 -export([init/3, handle/2, terminate/2]).
 
 init({_Any, http}, Req, _Opts) ->
-	lager:debug("...........default handler accessed!"),
+	lager:debug("...........default handler accessed!~n ~p ~n", [Req]),
 	{ok, Req, undefined}.
 
 handle(Req, State) ->
