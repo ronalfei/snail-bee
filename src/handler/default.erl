@@ -8,7 +8,7 @@ init({_Any, http}, Req, _Opts) ->
 	{ok, Req, undefined}.
 
 handle(Req, State) ->
-	{ok, Req2} = cowboy_req:reply(200, [], <<"snail-bee is running!">>, Req),
+	{ok, Req2} = cowboy_req:reply(403, [], <<"snail-bee is running!">>, Req),
 	{ok, Req2, State}.
 
 terminate(_Req, _State) ->

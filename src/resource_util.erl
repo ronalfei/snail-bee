@@ -40,7 +40,8 @@ generate_ngx_download_headers(Token, Req) ->
 
     DecodedFileName = case RawFileName =:= undefined of
         true -> Token#token.resource_id;
-        false -> util:url_decode(RawFileName)
+        false -> cowboy_http:urldecode(list_to_binary(RawFileName))
+
     end,
     ContentDisposition = case AgentType of
     firefox ->
