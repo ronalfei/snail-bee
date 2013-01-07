@@ -16,6 +16,15 @@ get_download_path(AppName, Rid) ->
     FullPath = io_lib:format("~s~s/~s/upload/~s", [?DOWNLOAD_DATA_PREFIX, MfsDir, AppName, TailPath]),
 	filename:absname(FullPath).
 
+get_download_path(AppName, Rid, "preview") ->
+	get_download_path(AppName, Rid) ++ ".preview";
+
+get_download_path(AppName, Rid, "thumb") ->
+	get_download_path(AppName, Rid) ++ ".thumb";
+
+get_download_path(AppName, Rid, "") ->
+	get_download_path(AppName, Rid).
+	
 
 
 %%-------------------------
@@ -38,21 +47,27 @@ generate_ngx_download_headers(Token, Req) ->
 	RawFileName = Token#token.resource_name,
     lager:debug("raw file name ~p", [RawFileName]),
 
-    DecodedFileName = case RawFileName =:= undefined of
+    %DecodedFileName = case RawFileName =:= undefined of
+    %    true -> Token#token.resource_id;
+    %    false -> cowboy_http:urldecode(list_to_binary(RawFileName))
+    %end,
+	%原来是对文件名做了urldecode的.
+	%现在的filename是通过token里解密出来的,所以刚好相反,是需要encode才对
+	%同时,如果做了encode, 后面的re:replace应该可以删除了.待看
+	DecodedFileName = case RawFileName =:= undefined of
         true -> Token#token.resource_id;
-        false -> cowboy_http:urldecode(list_to_binary(RawFileName))
-
+        false -> list_to_binary(RawFileName)
     end,
     ContentDisposition = case AgentType of
-    firefox ->
-        FileName = re:replace(DecodedFileName, "\\+", "%20", [global, {return, list}]),
-        lists:flatten( io_lib:format("attachment;filename*=utf8\'\'~s", [FileName]) );
-    msie ->
-        FileName = re:replace(DecodedFileName, "\\+", "%20", [global, {return, list}]),
-        lists:flatten( io_lib:format("attachment;filename=\"~s\"", [FileName]) );
-    undefined ->
-        FileName = re:replace(DecodedFileName, "\\+", " ", [global, {return, list}]),
-        lists:flatten( io_lib:format("attachment;filename=~s", [FileName]) )
+    	firefox ->
+    	    FileName = re:replace(DecodedFileName, "\\+", "%20", [global, {return, list}]),
+    	    lists:flatten( io_lib:format("attachment;filename*=utf8\'\'~s", [FileName]) );
+    	msie ->
+    	    FileName = re:replace(DecodedFileName, "\\+", "%20", [global, {return, list}]),
+    	    lists:flatten( io_lib:format("attachment;filename=\"~s\"", [FileName]) );
+    	undefined ->
+    	    FileName = re:replace(DecodedFileName, "\\+", " ", [global, {return, list}]),
+    	    lists:flatten( io_lib:format("attachment;filename=~s", [FileName]) )
     end,
 
 	FilePath = resource_util:get_download_path(Token#token.app_name, Token#token.resource_id),
@@ -75,8 +90,9 @@ generate_ngx_download_headers(Token, Req) ->
 %%-------------------------
 %% @doc Req is cowboy's req
 %% @doc return {[Headers], Req2}
-generate_ngx_view_headers(Token, Req) ->
-    FilePath = resource_util:get_download_path(Token#token.app_name, Token#token.resource_id),
+%% @doc Option is "preview"|"thumb"|""
+generate_ngx_view_headers(Token, Req, Option) ->
+    FilePath = resource_util:get_download_path(Token#token.app_name, Token#token.resource_id, Option),
     Etag = token:get_etag_value(Token),
     NewQueryString = case Etag of
         [] -> "";
@@ -85,9 +101,10 @@ generate_ngx_view_headers(Token, Req) ->
     Url = lists:flatten(io_lib:format("~s~s", [FilePath, NewQueryString])),
     lager:info("Last file url ..........~p ~n", [Url]),
     %let nginx determine the correct content type
+	MimeType = list_to_binary(Token#token.resource_type),
     Headers = [
         {<<"X-Accel-Redirect">>, Url},
-        {<<"Content-Type">>, mime:type(<<"gif">>)}
+        {<<"Content-Type">>, mime:type(MimeType)}
     ],
     {Headers, Req}.
 

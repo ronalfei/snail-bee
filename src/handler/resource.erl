@@ -96,10 +96,88 @@ download(Req, State, _Params) ->
 				%%second
 				%% ps: headers include x-accl-redirct-url
 					{Headers, Req2} = resource_util:generate_ngx_download_headers(Token, Req1),
+					lager:debug("give nginx download header : ~p ", [Headers]),
 					snail_action:reply(200, Headers, [], Req2, State)
 			end
     end.
-	
+
+%%--------------------preview------------------------
+preview(Req, State, _Params) ->
+	{[_Action, Rid1 | _Tail], Req}  = cowboy_req:path_info(Req),
+	%%客户端可能会包含文件后缀来请求，所以为了兼容， 需要去掉后缀名,
+	%%网页端可能也会请求带有jpg，gif，doc等预览的后缀名过来，所以也需要去掉
+	<<Rid:19/binary, _Rest/binary>> = Rid1,
+
+    EncryptedToken = token:get(Req, ""),
+    {ok, Token} = token:decode(EncryptedToken, ""),
+
+    AuthRet = authd:authorize("download", Rid, Token),
+
+    case AuthRet of
+        {error, Reason } ->
+            snail_action:reply(401, [{<<"www-authenticate">>, Reason}], Reason, Req, State);
+        {ok, true} ->
+            %%first to check is file in oss
+            {AgentType, Req1} = cowboy_util:get_user_agent_type(Req),
+            Location = oss_locate([Token#token.app_name
+                        , "preview"
+                        , Token#token.user_id
+                        , binary_to_list(Rid) ++ ".preview"
+                        , Token#token.resource_name
+                        , AgentType]),
+            lager:info(".......ali location: ~p..........................", [Location]),
+			Location1 = {error, "fuck"},
+            case Location1 of
+                {ok, OssUrl} ->
+                    Status = 301,
+                    lager:debug("redirect Urlllllll: ~s", [OssUrl]),
+                    Headers = [{<<"Location">>, OssUrl}, {<<"Cache-Control">>,<<"nocache">>}],
+                    snail_action:reply(Status, Headers, [], Req1, State);
+                {error, _}->
+                %%second
+                %% ps: headers include x-accl-redirct-url
+                    {Headers, Req2} = resource_util:generate_ngx_view_headers(Token, Req1, "preview"),
+                    snail_action:reply(200, Headers, [], Req2, State)
+            end
+    end.
+
+%%---------------------thumb-----------------------------
+thumb(Req, State, _Params) ->
+    {[_Action, Rid | _Tail], Req}  = cowboy_req:path_info(Req),
+    EncryptedToken = token:get(Req, ""),
+    {ok, Token} = token:decode(EncryptedToken, ""),
+
+    AuthRet = authd:authorize("download", Rid, Token),
+
+    case AuthRet of
+        {error, Reason } ->
+            snail_action:reply(401, [{<<"www-authenticate">>, Reason}], Reason, Req, State);
+        {ok, true} ->
+            %%first to check is file in oss
+            {AgentType, Req1} = cowboy_util:get_user_agent_type(Req),
+            Location = oss_locate([Token#token.app_name
+                        , "upload"
+                        , Token#token.user_id
+                        , binary_to_list(Rid) ++ ".thumb"
+                        , Token#token.resource_name
+                        , AgentType]),
+            lager:info(".......ali location: ~p..........................", [Location]),
+            case Location of
+                {ok, OssUrl} ->
+                    Status = 301,
+                    lager:debug("redirect Urlllllll: ~s", [OssUrl]),
+                    Headers = [{<<"Location">>, OssUrl}, {<<"Cache-Control">>,<<"nocache">>}],
+                    snail_action:reply(Status, Headers, [], Req1, State);
+                {error, _}->
+                %%second
+                %% ps: headers include x-accl-redirct-url
+                    {Headers, Req2} = resource_util:generate_ngx_view_headers(Token, Req1, "thumb"),
+                    snail_action:reply(200, Headers, [], Req2, State)
+            end
+    end.
+
+
+
 
 %%------------uploadblock--------
 %% @doc 
@@ -353,7 +431,7 @@ oss_locate([_AppName, _Pool, _Uid, _Rid, _Name, _Agent]) ->
         _Pool,
         _Uid,
         _Rid,
-        _Name,
+        cowboy_http:urlencode(list_to_binary(_Name)),
         _Agent
     ]),
 	try
@@ -377,12 +455,18 @@ oss_locate([_AppName, _Pool, _Uid, _Rid, _Name, _Agent]) ->
 
 send_preview_task(Rid, Token) ->
     FilePath = list_to_binary(lists:flatten(resource_util:get_upload_path(Token#token.app_name, Rid))),
-	Ext = list_to_binary(Token#token.resource_type),
+	lager:debug("resource_type is ~p", [Token#token.resource_type]),
+	Ext = case Token#token.resource_type of 
+		undefined -> <<>>;
+		_ -> list_to_binary(Token#token.resource_type)
+	end,
+
 	TargetPath = FilePath,
+	Option = [{<<"rid">>, Rid}, {<<"ext">>, Ext}],
 	Message = [		{<<"filepath">>, FilePath}
 				,	{<<"ext">>, Ext}
 				,	{<<"targetpath">>, TargetPath}
-				,	{<<"option">>, Ext}
+				,	{<<"option">>, Option}
 			  ],
 	msgbus_pool:put_message(create_preview, Message),
 	ok.

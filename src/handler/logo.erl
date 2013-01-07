@@ -87,7 +87,7 @@ view(Req, State, _Params) ->
             snail_action:reply(401, [{<<"www-authenticate">>, Reason}], Reason, Req, State);
         {ok, true} ->
 			%% ps: headers include x-accl-redirct-url
-			{Headers, Req1} = resource_util:generate_ngx_view_headers(Token, Req),
+			{Headers, Req1} = resource_util:generate_ngx_view_headers(Token, Req, ""),
 			snail_action:reply(200, Headers, [], Req1, State)
     end.
 
